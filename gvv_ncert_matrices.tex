@@ -346,7 +346,13 @@ Then,
 \end{align}
 
 \end{enumerate}
-
+\subsection{Inverse of a Matrix}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item 
+\end{enumerate}
 \section{Cayley-Hamilton Theorem}
 %\section{Examples}
 \renewcommand{\theequation}{\theenumi}
@@ -572,6 +578,32 @@ Multiplying the above expressions,
 \end{multline}
 %
 
+
+\end{enumerate}
+\section{Matrix Inverse}
+\subsection{$2\times 1$}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Using elementary transforamtions,find the inverse of   
+\myvec{1 &-1\\2 &3}\\
+  \solution
+%  \input{solutions/su2021/25.tex}
+\item Using elementary transforamtions,find the inverse of   
+   \myvec{2 &1\\1 &1}\\
+  \solution
+%  \input{solutions/su2021/26.tex}
+\item Obtain the inverse of the following matrix using elementary operations\\
+  A=$\myvec{0 &1 &2\\1 &2 &3\\3 &1 &1}$.\\
+  \solution
+ %   \input{solutions/su2021/69.tex}
+    \item Find P$^{-1}$, if it exists, given \\
+    P=$\myvec{10 &-2\\-5 &1}$.\\
+    \solution
+%    \input{solutions/su2021/70.tex}
+\item By using elementary operations,find the inverse of the matrix\\
+A=$\myvec{1 &2\\2 &-1}$.\\
 
 \end{enumerate}
 
