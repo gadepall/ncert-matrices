@@ -35,7 +35,7 @@
 %\usepackage{algorithm}
 %\usepackage{algpseudocode}
 \usepackage{enumitem}
-% \usepackage{mathtools}
+ \usepackage{mathtools}
 % \usepackage{tikz}
 % \usepackage{circuitikz}
 % \usepackage{verbatim}
@@ -183,7 +183,7 @@ Matrices
 
 
 % paper title
-% can use linebreaks \\ within to get better formatting as desired
+% can use linebreaks  \\ [1em]within to get better formatting as desired
 %\title{Matrix Analysis through Octave}
 %
 %
@@ -336,7 +336,7 @@ The above equation is known as the characteristic equation.
 
 \item Let 
 \begin{align}
-	\vec{A} = \myvec{a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3}.
+	\vec{A} = \myvec{a_1 & b_1 & c_1  \\ a_2 & b_2 & c_2  \\ a_3 & b_3 & c_3}.
 \end{align}
 be a $3 \times 3$ matrix. 
 Then, 
@@ -610,21 +610,115 @@ Multiplying the above expressions,
 \myvec{1 &-1\\2 &3}\\
   \solution
 %\  \input{solutions/su2021/25.tex}
-\item Using elementary transforamtions,find the inverse of   
+   Given that
+    \begin{align}
+    \vec{A} = \myvec{1 & -1 \\ 2 & 3}
+    \end{align}
+    The augmented matrix $ [\vec{A} | \vec{I}]$ is as given below:- 
+    \begin{align}
+	    \myvec{1 & -1 & \vrule & 1 & 0 \\[1 pt]  2 & 3 & \vrule & 0 & 1}
+    \end{align}
+    We apply the elementary row operations on $ [\vec{A} | \vec{I}]$ as follows :-
+    \begin{align}
+    [\vec{A} | \vec{I}] = \myvec{1 & -1 & \vrule & 1 & 0 \\ 2 & 3 & \vrule & 0 & 1}
+    \\
+    \xleftrightarrow{R_2\leftarrow R_2-2R_1}   
+    \myvec{1 & -1 & \vrule & 1 & 0 \\ 0 & 5 & \vrule & -2 & 1}
+    \\
+    \xleftrightarrow{R_2\leftarrow \frac{R_2}{5}}
+    \myvec{1 & -1 & \vrule & 1 & 0 \\ 0 & 1 & \vrule & \frac {-2}{5} & \frac {1}{5}}
+    \\
+    \xleftrightarrow{R_2\leftarrow R_1+R_2}
+    \myvec{1 & 0 & \vrule & \frac{3}{5} & \frac{1}{5}  \\ 0 & 1 & \vrule & \frac{-2}{5} & \frac{1}{5}}
+    \end{align}
+    By performing elementary transformations on augmented matrix$ [\vec{A} | \vec{I}]$ , we obtained the augmented matrix in the form $ [\vec{I} | \vec{A}]$. 
+    Hence we can conclude that the matrix A is invertible and 
+    \begin{align}
+   \vec{A^{-1}}=\myvec {\frac{3}{5} & \frac{1}{5}  \\  \frac{-2}{5} & \frac{1}{5}} 
+    \end{align}
+\item Using elementary transforamtions, find the inverse of   
    \myvec{2 &1\\1 &1}\\
   \solution
 %  \input{solutions/su2021/26.tex}
+Given that
+\begin{align}
+\vec{A} = \myvec{2 & 1 \\ 1 & 1}
+\end{align}
+The augmented matrix $ [\vec{A} | \vec{I}]$ is as given below:- 
+\begin{align}
+\myvec{2 & 1 & \vrule & 1 & 0 \\ 1 & 1 & \vrule & 0 & 1}
+\end{align}
+We apply the elementary row operations on $ [\vec{A} | \vec{I}]$ as follows :-
+\begin{align}
+[\vec{A} | \vec{I}] = \myvec{2 & 1 & \vrule & 1 & 0 \\ 1 & 1 & \vrule & 0 & 1}
+\\
+\xleftrightarrow{R_1\leftarrow R_1-R_2}   
+\myvec{1 & 0 & \vrule & 1 & -1 \\ 1 & 1 & \vrule & 0 & 1}
+\\
+\xleftrightarrow{R_2\leftarrow R_2-R_1}
+\myvec{1 & 0 & \vrule & 1 & -1 \\ 0 & 1 & \vrule & -1 & 2}
+\end{align}
+By performing elementary transformations on augmented matrix$ [\vec{A} | \vec{I}]$ , we obtained the augmented matrix in the form $ [\vec{I} | \vec{A}]$. 
+Hence we can conclude that the matrix A is invertible and inverse of the matrix is
+\begin{align}
+\vec{A^{-1}}=\myvec {1 & -1 \\  -1 & 2} 
+\end{align}
 \item Obtain the inverse of the following matrix using elementary operations\\
   A=$\myvec{0 &1 &2\\1 &2 &3\\3 &1 &1}$.\\
   \solution
  %   \input{solutions/su2021/69.tex}
+    Given that
+    \begin{align}
+    \vec{A}& =\myvec {0 & 1 & 2\\1 & 2 & 3\\3 & 1 & 1},
+    \end{align}
+     The augmented matrix $[\vec{A} | \vec{I}]$ is 
+    \begin{align}
+    \myvec{0 & 1 & 2 & \vrule & 1 & 0 & 0\\1 & 2 & 3 & \vrule & 0 & 1 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
+    \end{align}
+    Applying elementary row operations on $[\vec{A} | \vec{I}]$, 
+    \begin{align}
+    [\vec{A} | \vec{I}] = \myvec{0 & 1 & 2 & \vrule & 1 & 0 & 0\\1 & 2 & 3 & \vrule & 0 & 1 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
+    \\
+    \xleftrightarrow{R_1\leftrightarrow R_2}   
+    \myvec{1 & 2 & 3 & \vrule & 0 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
+    \\
+    \xleftrightarrow{R_3\leftarrow R_3-3R_1}   
+    \myvec{1 & 2 & 3 & \vrule & 0 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & -5 & -8 & \vrule & 0 & -3 & 1}
+    \\
+    \xleftrightarrow{R_1\leftarrow R_1-2R_2}  
+    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & -5 & -8 & \vrule & 0 & -3 & 1}
+    \\
+    \xleftrightarrow{R_3\leftarrow R_3+5R_2}  
+    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 2 & \vrule & 5 & -3 & 1}
+    \\
+    \xleftrightarrow{R_3\leftarrow R_3/2}
+    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\ 0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
+    \\
+    \xleftrightarrow{R_1\leftarrow R_1+R_3}
+    \myvec{1 & 0 & 0 & \vrule & \frac{1}{2} & \frac{-1}{2} & \frac{1}{2}\\ 0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
+    \\
+    \xleftrightarrow{R_2\leftarrow R_2-2R_3}
+    \myvec{1 & 0 & 0 & \vrule & \frac{1}{2} & \frac{-1}{2} & \frac{1}{2}\\ 0 & 1 & 0 & \vrule & -4 & 3 & -1\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
+    \end{align}
+    By performing elementary transformations on augmented matrix$ [\vec{A} | \vec{I}]$, we obtained the augmented matrix in the form $ [\vec{I} | \vec{A}]$. 
+    Hence we can conclude that the matrix A is invertible and inverse of the matrix is
+    \begin{align}
+\vec{A^{-1}}=\myvec { \frac{1}{2} & \frac{-1}{2} & \frac{1}{2} \\  -4 & 3 & -1\\ \frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
+    \end{align}
     \item Find P$^{-1}$, if it exists, given \\
     P=$\myvec{10 &-2\\-5 &1}$.\\
     \solution
-    \input{solutions/su2021/70.tex}
+Using row reduction, 
+%
+\begin{align}
+\myvec{10 & -2 \\-5 & 1}
+\xleftrightarrow {R_2 \leftarrow R_2+\frac{R_1}{2}}\myvec{10& -2& \\0 & 0}
+\end{align} 
+Since we obtain a zero row, 
+$\vec {P}^{-1} $ does not exist.
+%    \input{solutions/su2021/70.tex}
  
 \end{enumerate}
  
 \end{document}
-
 
