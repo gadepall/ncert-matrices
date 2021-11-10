@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  7 NOV 2021 20:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  9 NOV 2021 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -611,7 +611,7 @@ Package rerunfilecheck Info: File `gvv_ncert_matrices.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  12173 strings out of 478994
- 176279 string characters out of 5864751
+ 176279 string characters out of 5864752
  511495 words of memory out of 5000000
  29400 multiletter control sequences out of 15000+600000
  441000 words of font info for 101 fonts, out of 8000000 for 9000
