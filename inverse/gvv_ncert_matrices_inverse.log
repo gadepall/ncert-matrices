@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  11 NOV 2021 08:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  11 NOV 2021 09:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -629,11 +629,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-])
+]) (./solutions/3.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-[3
+)
+(./solutions/4.tex [2]) [3
 
 ] (./gvv_ncert_matrices_inverse.aux)
 Package rerunfilecheck Info: File `gvv_ncert_matrices_inverse.out' has not chan
@@ -641,10 +641,10 @@ ged.
 (rerunfilecheck)             Checksum: 2B69345D12B0540098883C01E5D2EDED;181.
  ) 
 Here is how much of TeX's memory you used:
- 12657 strings out of 478994
- 185512 string characters out of 5864752
+ 12665 strings out of 478994
+ 185608 string characters out of 5864752
  534423 words of memory out of 5000000
- 29912 multiletter control sequences out of 15000+600000
+ 29914 multiletter control sequences out of 15000+600000
  439864 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  71i,18n,74p,518b,1009s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -660,7 +660,7 @@ usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/ty
 pe1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.p
 fb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gvv_ncert_matrices_inverse.pdf (3 pages, 132803 bytes).
+Output written on gvv_ncert_matrices_inverse.pdf (3 pages, 132787 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
  114 compressed objects within 2 object streams
