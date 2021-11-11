@@ -1,39 +1,38 @@
+We know that the number of atoms of each element remains the
+same, before and after a chemical reaction.
 
-    Given that
-    \begin{align}
-    \vec{A}& =\myvec {0 & 1 & 2\\1 & 2 & 3\\3 & 1 & 1},
-    \end{align}
-     The augmented matrix $[\vec{A} | \vec{I}]$ is 
-    \begin{align}
-    \myvec{0 & 1 & 2 & \vrule & 1 & 0 & 0\\1 & 2 & 3 & \vrule & 0 & 1 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
-    \end{align}
-    Applying elementary row operations on $[\vec{A} | \vec{I}]$, 
-    \begin{align}
-    [\vec{A} | \vec{I}] = \myvec{0 & 1 & 2 & \vrule & 1 & 0 & 0\\1 & 2 & 3 & \vrule & 0 & 1 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
-    \\
-    \xleftrightarrow{R_1\leftrightarrow R_2}   
-    \myvec{1 & 2 & 3 & \vrule & 0 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
-    \\
-    \xleftrightarrow{R_3\leftarrow R_3-3R_1}   
-    \myvec{1 & 2 & 3 & \vrule & 0 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & -5 & -8 & \vrule & 0 & -3 & 1}
-    \\
-    \xleftrightarrow{R_1\leftarrow R_1-2R_2}  
-    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & -5 & -8 & \vrule & 0 & -3 & 1}
-    \\
-    \xleftrightarrow{R_3\leftarrow R_3+5R_2}  
-    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 2 & \vrule & 5 & -3 & 1}
-    \\
-    \xleftrightarrow{R_3\leftarrow R_3/2}
-    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\ 0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
-    \\
-    \xleftrightarrow{R_1\leftarrow R_1+R_3}
-    \myvec{1 & 0 & 0 & \vrule & \frac{1}{2} & \frac{-1}{2} & \frac{1}{2}\\ 0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
-    \\
-    \xleftrightarrow{R_2\leftarrow R_2-2R_3}
-    \myvec{1 & 0 & 0 & \vrule & \frac{1}{2} & \frac{-1}{2} & \frac{1}{2}\\ 0 & 1 & 0 & \vrule & -4 & 3 & -1\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
-    \end{align}
-    By performing elementary transformations on augmented matrix$ [\vec{A} | \vec{I}]$, we obtained the augmented matrix in the form $ [\vec{I} | \vec{A}]$. 
-    Hence we can conclude that the matrix A is invertible and inverse of the matrix is
-    \begin{align}
-\vec{A^{-1}}=\myvec { \frac{1}{2} & \frac{-1}{2} & \frac{1}{2} \\  -4 & 3 & -1\\ \frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
-    \end{align}
+Equation \eqref{eq:solutions/chemistry/7d:1} can be written as:
+\begin{align}
+x_1BaCl_2 + x_2K_2SO_4 \rightarrow x_3BaSO_4 + x_4KCl\label{eq:solutions/chemistry/7d:2}
+\end{align}
+Element wise contribution in forming the respective chemical compound can be written in the form of equation as :
+\begin{align}
+Ba : x_1 + 0x_2 - x_3 - 0x_4 = 0\\
+Cl : 2x_1 + 0x_2 - 0x_3 - 1x_4 = 0\\
+K  : 0x_1 + 2x_2 - 0x_3 - 1x_4 = 0\\
+S  : 0x_1 + 1x_2 - 1x_3 - 0x_4 = 0\\
+O  : 0x_1 + 4x_2 - 4x_3 - 0x_4 = 0
+\end{align}
+In matrix form this can be written as:
+\begin{align}
+A\vec{x}&=0\\
+  \myvec{1&0&-1&0\\2&0&0&-1\\0&2&0&-1\\0&1&-1&0\\0&4&-4&0}\myvec{x_1\\x_2\\x_3\\x_4}&=\myvec{0\\0\\0\\0\\0}
+\end{align}
+Using Gaussian Elimination method 
+\begin{align}
+\xleftrightarrow{R_2 \leftrightarrow R_5}\myvec{1&0&-1&0&:&0\\0&4&-4&0&:&0\\0&2&0&-1&:&0\\0&1&-1&0&:&0\\2&0&0&-1&:&0}\\
+\xleftrightarrow{R_5 \leftarrow 2R_1-R_5}\myvec{1&0&-1&0&:&0\\0&4&-4&0&:&0\\0&2&0&-1&:&0\\0&1&-1&0&:&0\\0&0&-2&1&:&0}\\
+\xleftrightarrow[R_4 \leftarrow 4R_4-R_2]{R_3 \leftarrow 2R_3-R_2}\myvec{1&0&-1&0&:&0\\0&4&-4&0&:&0\\0&0&4&-2&:&0\\0&0&0&0&:&0\\0&0&-2&1&:&0}\\
+\xleftrightarrow{R_5 \leftrightarrow R_5}\myvec{1&0&-1&0&:&0\\0&4&-4&0&:&0\\0&0&4&-2&:&0\\0&0&-2&1&:&0\\0&0&0&0&:&0}\\
+\xleftrightarrow{R_4 \leftarrow 2R_4-R_3}\myvec{1&0&-1&0&:&0\\0&4&-4&0&:&0\\0&0&4&-2&:&0\\0&0&0&0&:&0\\0&0&0&0&:&0}
+\end{align}
+Clearly the system is linearly dependent. Therefore by fixing the value of $x_4=2$, one of the possible vector $\vec{x}$ is:
+\begin{align}
+    \vec{x}=\myvec{1\\1\\1\\2}
+\end{align}
+Hence by putting the values of $x_1,x_2,x_3,x_4$ in equation \eqref{eq:solutions/chemistry/7d:1} we get our balanced chemical equation as followes :
+\begin{align}
+BaCl_2 + K_2SO_4 \rightarrow BaSO_4 + 2KCl
+\end{align}
+
+
