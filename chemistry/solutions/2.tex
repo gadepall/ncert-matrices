@@ -1,0 +1,24 @@
+
+Given that
+\begin{align}
+\vec{A} = \myvec{2 & 1 \\ 1 & 1}
+\end{align}
+The augmented matrix $ [\vec{A} | \vec{I}]$ is as given below:- 
+\begin{align}
+\myvec{2 & 1 & \vrule & 1 & 0 \\ 1 & 1 & \vrule & 0 & 1}
+\end{align}
+We apply the elementary row operations on $ [\vec{A} | \vec{I}]$ as follows :-
+\begin{align}
+[\vec{A} | \vec{I}] = \myvec{2 & 1 & \vrule & 1 & 0 \\ 1 & 1 & \vrule & 0 & 1}
+\\
+\xleftrightarrow{R_1\leftarrow R_1-R_2}   
+\myvec{1 & 0 & \vrule & 1 & -1 \\ 1 & 1 & \vrule & 0 & 1}
+\\
+\xleftrightarrow{R_2\leftarrow R_2-R_1}
+\myvec{1 & 0 & \vrule & 1 & -1 \\ 0 & 1 & \vrule & -1 & 2}
+\end{align}
+By performing elementary transformations on augmented matrix$ [\vec{A} | \vec{I}]$ , we obtained the augmented matrix in the form $ [\vec{I} | \vec{A}]$. 
+Hence we can conclude that the matrix A is invertible and inverse of the matrix is
+\begin{align}
+\vec{A^{-1}}=\myvec {1 & -1 \\  -1 & 2} 
+\end{align}
