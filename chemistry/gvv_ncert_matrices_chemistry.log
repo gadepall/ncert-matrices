@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  11 NOV 2021 18:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  12 NOV 2021 09:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,7 +302,12 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_shortintertext_sep=\dimen181
 \xmathstrut@box=\box56
 \xmathstrut@dim=\dimen182
-) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/home/user/texmf/tex/latex/tfrupee/tfrupee.sty
+Package: tfrupee 2010/12/15 LaTeX Support for the TechFat Rupee symbols by Tech
+Fat (http://techfat.blogspot.com/2010/07/new-open-source-india-rupee-font.html)
+. Adapted for use with TeX by Palle Jorgensen, hamselv(a)pallej.dk
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
 
 (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -596,20 +601,20 @@ e
 \c@lemma=\count314
 \c@example=\count315
 \c@rem=\count316
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 247.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 245.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14> on input line 247.
+(Font)              <14> on input line 245.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.79996> on input line 247.
+(Font)              <9.79996> on input line 245.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 247.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 247
+(Font)              <7> on input line 245.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 245
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 247
+LaTeX Font Info:    Trying to load font information for U+msb on input line 245
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -620,11 +625,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `gvv_ncert_matrices_chemistry.toc'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 304.
+(Font)              <12> on input line 302.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 304.
+(Font)              <8> on input line 302.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 304.
+(Font)              <6> on input line 302.
  (./solutions/1.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -634,19 +639,28 @@ Underfull \hbox (badness 2600) in paragraph at lines 28--30
 \OT1/ptm/m/n/12 Clearly the sys-tem is lin-early de-pen-dent.
  []
 
-) (./solutions/4.tex [3]) [4
+) (./solutions/4.tex [3]) (./solutions/5.tex
+Overfull \hbox (14.61818pt too wide) detected at line 5
+ []$[]  \OML/cmm/m/it/12 x[]NaOH \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x[]H[]SO[] 
+[] x[]Na[]SO[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x[]H[]O$ []  
+ []
 
-] (./gvv_ncert_matrices_chemistry.aux)
+[4]) (./solutions/6.tex
+Overfull \hbox (24.04156pt too wide) in paragraph at lines 22--22
+[] 
+ []
+
+) [5] (./gvv_ncert_matrices_chemistry.aux)
 Package rerunfilecheck Info: File `gvv_ncert_matrices_chemistry.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 52DBBCA1C6459DB281E69FF49C1CA799;83.
+(rerunfilecheck)             Checksum: E97453628E65800D137D6BE042149898;297.
  ) 
 Here is how much of TeX's memory you used:
- 12720 strings out of 478994
- 186569 string characters out of 5864751
- 542042 words of memory out of 5000000
- 29928 multiletter control sequences out of 15000+600000
- 439864 words of font info for 100 fonts, out of 8000000 for 9000
+ 12788 strings out of 478994
+ 187531 string characters out of 5864751
+ 545036 words of memory out of 5000000
+ 29951 multiletter control sequences out of 15000+600000
+ 440292 words of font info for 101 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  71i,19n,74p,520b,1009s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
@@ -657,13 +671,14 @@ r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/
-times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gvv_ncert_matrices_chemistry.pdf (4 pages, 132437 bytes).
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/user/texm
+f/fonts/type1/tfrupee/tfrupee.pfb></usr/share/texmf-dist/fonts/type1/urw/times/
+utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on gvv_ncert_matrices_chemistry.pdf (5 pages, 233056 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
- 83 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 117 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 

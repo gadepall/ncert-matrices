@@ -39,7 +39,7 @@
 % \usepackage{tikz}
 % \usepackage{circuitikz}
 % \usepackage{verbatim}
-%\usepackage{tfrupee}
+\usepackage{tfrupee}
 \usepackage[breaklinks=true]{hyperref}
 %\usepackage{stmaryrd}
 %\usepackage{tkz-euclide} % loads  TikZ and tkz-base
@@ -166,9 +166,7 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{
-	%\logo{
-%Computational Approach to School Geometry
-Balancing Chemical Equations using Matrices
+Matrix Applications
 %	}
 }
 \author{ G V V Sharma$^{*}$% <-this % stops a space
@@ -294,7 +292,7 @@ svn co https://github.com/gadepall/school/trunk/ncert/computation/codes
 \end{lstlisting}
 
 %
-\section{Examples}
+\section{Balancing Chemical Equations}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
@@ -337,20 +335,29 @@ NaOH + H_2SO_4 \xrightarrow{} Na_2SO_4  +  H_2O
 \end{align}
 \\
 \solution
-\input{solutions/su2021/50.tex}
+\input{solutions/5.tex}
+\end{enumerate}
+\section{Miscellaneous}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
 \item A trust fund has \rupee{30,000} that must be invested in two different types of bonds.
 The first bond pays 5\% interest per year, and the second bond pays 7\% interest
 per year. Using matrix multiplication, determine how to divide \rupee{ 30,000} among
-the two types of bonds. If the trust fund must obtain an annual total interest of:\\
-(a) \rupee{1800} (b)\rupee{2000}\\
+the two types of bonds if the trust fund must obtain an annual total interest of
+\begin{enumerate}
+	\item  \rupee{1800} 
+	\item \rupee{2000}
+\end{enumerate}
 \solution 
-%\input{./solutions/matrix/29/solution.tex}
+\input{./solutions/6.tex}
 \item The bookshop of a particular school has 10 dozen chemistry books, 8 dozen
 physics books, 10 dozen economics books. Their selling prices are \rupee{80}, \rupee{60} and
  \rupee{40} each respectively. Find the total amount the bookshop will receive from
 selling all the books using matrix algebra.\\
 \solution
-\input{solutions/su2021/13.tex}
+%\input{solutions/su2021/13.tex}
 \end{enumerate}
  
 \end{document}

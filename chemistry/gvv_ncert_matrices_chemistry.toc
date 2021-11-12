@@ -1,1 +1,2 @@
-\contentsline {section}{\numberline {1}Examples}{1}{section.1}%
+\contentsline {section}{\numberline {1}Balancing Chemical Equations}{1}{section.1}%
+\contentsline {section}{\numberline {2}Miscellaneous}{5}{section.2}%
