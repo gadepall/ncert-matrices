@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  12 NOV 2021 09:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  13 NOV 2021 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -645,20 +645,15 @@ Overfull \hbox (14.61818pt too wide) detected at line 5
 [] x[]Na[]SO[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x[]H[]O$ []  
  []
 
-[4]) (./solutions/6.tex
-Overfull \hbox (24.04156pt too wide) in paragraph at lines 22--22
-[] 
- []
-
-) [5] (./gvv_ncert_matrices_chemistry.aux)
+[4]) (./solutions/6.tex) [5] (./gvv_ncert_matrices_chemistry.aux)
 Package rerunfilecheck Info: File `gvv_ncert_matrices_chemistry.out' has not ch
 anged.
 (rerunfilecheck)             Checksum: E97453628E65800D137D6BE042149898;297.
  ) 
 Here is how much of TeX's memory you used:
- 12788 strings out of 478994
- 187531 string characters out of 5864751
- 545036 words of memory out of 5000000
+ 12797 strings out of 478994
+ 187632 string characters out of 5864751
+ 545038 words of memory out of 5000000
  29951 multiletter control sequences out of 15000+600000
  440292 words of font info for 101 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -675,10 +670,10 @@ ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1
 f/fonts/type1/tfrupee/tfrupee.pfb></usr/share/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gvv_ncert_matrices_chemistry.pdf (5 pages, 233056 bytes).
+Output written on gvv_ncert_matrices_chemistry.pdf (5 pages, 234705 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 227 compressed objects within 3 object streams
- 117 named destinations out of 1000 (max. 500000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 126 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
