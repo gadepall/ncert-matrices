@@ -292,6 +292,41 @@ Download python codes using
 \begin{lstlisting}
 svn co https://github.com/gadepall/school/trunk/ncert/computation/codes
 \end{lstlisting}
+\section{Eigenvalues and Eigenvectors}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The eigenvalue $\lambda$ and the eigenvector $\vec{x}$  for a matrix $\vec{A}$ are defined as, 
+\begin{align}
+  \vec{A} \vec{x} = \lambda \vec{x}
+\end{align}
+\item The eigenvalues are calculated by solving the
+equation
+\begin{align}
+  \label{eq:chareq}
+f\brak{\lambda} = \mydet{\lambda \vec{I}- \vec{A} } =0
+\end{align}
+The above equation is known as the characteristic equation.
+\item According to the Cayley-Hamilton theorem,
+\begin{align}
+	\label{eq:cayley}
+  f(\lambda) = 0 \implies f\brak{\vec{A}} = 0
+\end{align}
+\item The trace of a square  matrix is defined to be the sum of the diagonal elements.
+\begin{align}
+	\label{eq:trace}
+	\text{tr}\brak{\vec{A}}=\sum_{i=1}^{N}a_{ii}.
+\end{align}
+	where $a_{ii}$ is the $i$th diagonal element of the matrix $\vec{A}$. 	
+\item The trace of a matrix is equal to the sum of the eigenvalues
+\begin{align}
+	\label{eq:trace_eig}
+	\text{tr}\brak{\vec{A}}=\sum_{i=1}^{N}\lambda_i
+\end{align}
+
+
+\end{enumerate}
 
 %
 \section{Examples}
@@ -301,27 +336,145 @@ svn co https://github.com/gadepall/school/trunk/ncert/computation/codes
 \numberwithin{equation}{enumi}
 
 
-  \item If A=\myvec{3 &1\\-1 &2},show that $A^{2}$-5A+7I=0\\
+\item If 
+\begin{align}
+	\vec{A}=\myvec{3 &1\\-1 &2},
+	\end{align}
+	show that 
+	\begin{align}
+		\label{eq:chareq2}
+		\vec{A}^{2}-5\vec{A}+7\vec{I}=0
+		\end{align}
+	%
 \solution
-\input{./solutions/matrix/70/solution.tex}
-
-
+%
+\input{./solutions/1.tex}
   \item If A=$\myvec{\alpha &\beta\\ \gamma &-\alpha}$ is such that $A^{2}=I$,then\\
   (A)$1+\alpha^{2}+\beta\gamma=0$ (B)$1-\alpha^{}2+\beta\gamma=0$\\
   (C)$1-\alpha^{2}-\beta\gamma=0$ (D)$1+\alpha^{2}-\beta\gamma=0$\\
 \\
 \solution
-\input{./solutions/matrix/75/solution.tex}
+\input{solutions/2.tex}
+%\input{./solutions/matrix/75/solution.tex}
 
-  \item If A is square matrix such that $A^{2}=A$,then $(I+A)^{3}-7A$ is equal to\\
-  (A)A \\(B)I-A\\ (C)I\\ (D)3A
-\\
+\item If $\vec{A}$ is square matrix such that 
+\begin{equation}
+	\vec{A}^2 = \vec{A},
+   \end{equation}
+   %
+   then 
+   \begin{equation}
+	\label{eq:gpoly}
+	g\brak{\vec{A}} = \brak{\vec{I}+\vec{A}}^{3}-7\vec{A}
+   \end{equation}
+%
+ is equal to
+\begin{enumerate}
+\item $\vec{A}$ \item  $\vec{I}-\vec{A}$ \item  $\vec{I}$ \item $3\vec{A}$
+\end{enumerate}
+%
+\solution  From \eqref{eq:gpoly}, 
+\begin{equation}
+\label{eq:glam}
+g\brak{\lambda} = \brak{1+\lambda}^{3}-7\lambda
+\end{equation}
+%
+Also, 
+\begin{equation}
+ \vec{A}^2 = \vec{A} \implies \vec{A}^2 - \vec{A} = 0 
+\end{equation}
+Using the Cayley-Hamilton theorem, the eigenvalues satisfy the characteristic equation 
+%
+\begin{equation}\label{eq:solutions/matrix/77/eq1}
+f\brak{\lambda} = \lambda^2 - \lambda = 0 
+\end{equation}
+$\because  f\brak{\lambda}$  is of degree 2 and $g\brak{\lambda} $ is of degree 3, \eqref{eq:glam} can be expressed as
+\begin{align}
+	g\brak{\lambda}	 = f\brak{\lambda}		q\brak{\lambda}	+ a\lambda +b
+\end{align}
+%
+where $a, b$ are real numbers and $q\brak{\lambda}$ is some polynomial.  Thus, 
+\begin{align}
+	g\brak{0}	 &= b = 1
+	\\
+	g\brak{1}	 &= a+b = 1
+	\\
+	\implies a &= 90, b = 1
+	\label{eq:glam_ab}
+\end{align}
+Thus, 
+\begin{align}
+	g\brak{\vec{A}} &= f\brak{\vec{A}}		q\brak{\vec{A}}	+ a\vec{A} +b\vec{I}
+	\\
+	&= \vec{I}
+\end{align}
+upon substituting from \eqref{eq:solutions/matrix/77/eq1} and \eqref{eq:glam_ab}.
+Option c is the valid answer.
+
+\item If 
+\begin{align}
+	\vec{A}=\myvec{1 &2 &3\\3 &-2 &1\\4 &2 &1}
+\end{align}
+then show that 
+\begin{align}
+	\label{eq:chareq4}
+	\vec{A}^3-23\vec{A}-40\vec{I}=0
+\end{align}
+%  
 \solution
-\input{./solutions/matrix/77/solution.tex}
-\item If A=$\myvec{1 &2 &3\\3 &-2 &1\\4 &2 &1}$,then show that $A^3-23A-40I=0$
-\\  
-\solution
-\input{solutions/su2021/63.tex}
+ The Characteristic equation is given by
+\begin{align}
+   \abs{\vec{A}-\lambda\vec{I}}&=0
+    \\
+    \implies \mydet{1-\lambda&2&3\\3&-2-\lambda&1\\4&2&1-\lambda}&=0
+    \end{align}
+	which can be expressed as 
+\begin{multline}
+   \implies\brak{1-\lambda}\brak{\brak{-2-\lambda}\brak{1-\lambda}-2}
+   \\
+   -2\brak{3\brak{1-\lambda}-4}+3\brak{6+4\brak{2+\lambda}}=0
+\end{multline}
+and simplified to obtain 
+\begin{align}
+ \implies   \lambda^3-23\lambda-40=0.
+\end{align}
+%
+Using the  Cayley-Hamilton Theorem, 	\eqref{eq:chareq4} is obtained.
+%
+\end{enumerate}
+
+\item If 
+\begin{align}
+\vec{A}=\myvec{1 &0 &2\\0 &2 &1\\2 &0 &3},
+\end{align}
+prove that 
+\begin{align}
+	\label{eq:chareq1}
+	\vec{A}^3-6\vec{A}^2+7\vec{A}+2\vec{I}=0
+	\end{align}
+	%
+\solution 
+From   \eqref{eq:chareq}, the characteristic equation is 
+\begin{align}
+%
+ \mydet{1 -\lambda & 0 & 2 \\ 0 & 2 -\lambda & 1 \\ 2 & 0 & 3-\lambda} &= 0  
+\end{align}
+which can be expanded to obtain 
+\begin{align}
+%
+ (1-\lambda)(2-\lambda)(3-\lambda) + 2(-2(2-\lambda)) &= 0
+\end{align}
+yielding
+\begin{align}
+%
+ \lambda^3 - 6\lambda^2 + 7\lambda + 2 &= 0
+\end{align}
+%
+upon simplification. 
+Using  the Cayley-Hamilton theorem in \eqref{eq:cayley}, 	\eqref{eq:chareq1} is obtained
+%
+%
+
 \end{enumerate}
  
 \end{document}
