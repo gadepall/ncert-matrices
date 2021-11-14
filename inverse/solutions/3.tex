@@ -7,13 +7,16 @@
     \begin{align}
     \myvec{0 & 1 & 2 & \vrule & 1 & 0 & 0\\1 & 2 & 3 & \vrule & 0 & 1 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
     \end{align}
-    Applying elementary row operations on $[\vec{A} | \vec{I}]$, 
+    Since there is 0 in the first row above, the first row can be interchanged with the second so that the first entry of the first row becomes nonzero.
+    %    Applying elementary row operations on $[\vec{A} | \vec{I}]$, 
     \begin{align}
     [\vec{A} | \vec{I}] = \myvec{0 & 1 & 2 & \vrule & 1 & 0 & 0\\1 & 2 & 3 & \vrule & 0 & 1 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
     \\
     \xleftrightarrow{R_1\leftrightarrow R_2}   
     \myvec{1 & 2 & 3 & \vrule & 0 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
-    \\
+    \end{align}
+    Continuing with row operations to obtain a lower triangular matrix, 
+    \begin{align}
     \xleftrightarrow{R_3\leftarrow R_3-3R_1}   
     \myvec{1 & 2 & 3 & \vrule & 0 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & -5 & -8 & \vrule & 0 & -3 & 1}
     \\
@@ -22,7 +25,9 @@
     \\
     \xleftrightarrow{R_3\leftarrow R_3+5R_2}  
     \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 2 & \vrule & 5 & -3 & 1}
-    \\
+    \end{align}
+   Further row operations are performed to obtain the identity matrix.  
+    \begin{align}
     \xleftrightarrow{R_3\leftarrow R_3/2}
     \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\ 0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
     \\

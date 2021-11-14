@@ -166,10 +166,7 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{
-	%\logo{
-%Computational Approach to School Geometry
-Matrices
-%	}
+Matrix Inversion
 }
 \author{ G V V Sharma$^{*}$% <-this % stops a space
 	\thanks{*The author is with the Department
@@ -285,13 +282,13 @@ Matrices
 %\IEEEpeerreviewmaketitle
 
 \begin{abstract}
-This book provides a computational approach to school geometry based on the NCERT textbooks from Class 6-12.  Links to sample Python codes are available in the text.  
+This manual explains matrix inversion by solving problems from NCERT textbooks from Class 6-12.  
 \end{abstract}
-Download python codes using 
-\begin{lstlisting}
-svn co https://github.com/gadepall/school/trunk/ncert/computation/codes
-\end{lstlisting}
-
+%Download python codes using 
+%\begin{lstlisting}
+%svn co https://github.com/gadepall/school/trunk/ncert/computation/codes
+%\end{lstlisting}
+%
 \section{Definitions}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
@@ -305,6 +302,14 @@ the inverse is given by
 \begin{align}
 	\vec{A}^{-1} = \frac{1}{\mydet{\vec{A}}}\myvec{b_2 & -b_1  \\ -a_2 & a_1 },
 \end{align}
+\item Using elementary transformations,find the inverse of   
+\myvec{1 &-1\\2 &3}\\
+  \solution
+  \input{solutions/1.tex}
+\item Obtain the inverse of the following matrix using elementary operations\\
+  A=$\myvec{0 &1 &2\\1 &2 &3\\3 &1 &1}$.\\
+  \solution
+   \input{solutions/3.tex}
 \item For higher order matrices, the inverse should be calculated using row operations.
 \end{enumerate}
 
@@ -314,49 +319,197 @@ the inverse is given by
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
-\item Using elementary transforamtions,find the inverse of   
-\myvec{1 &-1\\2 &3}\\
-  \solution
-  \input{solutions/1.tex}
-\item Using elementary transforamtions, find the inverse of   
+
+\item Using elementary transformations, find the inverse of   
    \myvec{2 &1\\1 &1}\\
   \solution
   \input{solutions/2.tex}
-\item Obtain the inverse of the following matrix using elementary operations\\
-  A=$\myvec{0 &1 &2\\1 &2 &3\\3 &1 &1}$.\\
-  \solution
-   \input{solutions/3.tex}
     \item Find P$^{-1}$, if it exists, given \\
     P=$\myvec{10 &-2\\-5 &1}$.\\
     \solution
     \input{solutions/4.tex}
  
+Using elementary transformations,find the inverse of each of the matrices, if it exists \\
   \item \myvec{2 &-3 &3\\2 &2 &3\\3 &-2 &2}\\
 \solution
-\input{./solutions/matrix/59/solution.tex}
+    \input{solutions/5.tex}
   \item \myvec{1 &3 &-2\\-3 &0 &-5\\2 &5 &0}\\
 \solution
-\input{./solutions/matrix/60/solution.tex}
+    \input{solutions/6.tex}
   \item \myvec{2 &0 &-1\\5 &1 &0\\0 &1 &3}\\
 \solution
-\input{./solutions/matrix/61/solution.tex}
-Using elementary transforamtions,find the inverse of each of the matrices,if it exists \\
+    \input{solutions/7.tex}
+%\input{./solutions/matrix/61/solution.tex}
   
-  \item\myvec{1 &-1\\2 &3}\\
-  \solution
-  \input{solutions/su2021/25.tex}
+  \item   
+\myvec{1 &-1\\2 &3}\\
+%\solution
+%\input{./solutions/decomp/2/1/solution.tex}
+
+\item  \myvec{2&3\\3&-4}
+\\
+%\solution
+%\input{./solutions/decomp/2/15/solution.tex}
+\item   $\myvec{3&2\\1&4}$ 
+\\
+%\solution
+%\input{./solutions/decomp/2/16/solution.tex}
+%
+\item   \myvec{4&3\\5&-2}
+\\
+%\solution
+%\input{./solutions/decomp/2/17/solution.tex}
+%
+\item 
+\begin{align}
+ \vec{A}=\myvec{1&2\\3&1}
+\end{align}
+%\solution
+%\input{./solutions/decomp/2/18/solution.tex}
+\item   
+\begin{align}
+    \myvec{1&2\\2&-2}
+\end{align}
+%\solution
+%\input{./solutions/decomp/2/19/solution.tex}
+%
+\item 
+\begin{align}
+    \myvec{2&1\\1&-2}
+\end{align}
+%
+%\solution
+%\input{./solutions/decomp/2/20/solution.tex}
+\item 
+\begin{align}
+    \vec{A}=\myvec{ 1 & 4 \\ 3 & -5 }\label{eq:solutions/decomp/2/21/givmat}
+\end{align}
+%\solution
+%\input{./solutions/decomp/2/21/solution.tex}
+%
+\item  
+\begin{align}
+    \vec{A}=\myvec{ 1 & -7 \\ 3 & 1 }\label{eq:solutions/decomp/2/22/givmat}
+\end{align}
+%\solution
+%\input{./solutions/decomp/2/22/solution.tex}
+%
+\item  $\vec{A} = \myvec{3 & -2\\4 & -2}$, 
+%
+%\solution
+%\input{./solutions/decomp/2/23/solution.tex}
+\item   $\vec{A}=\myvec{3&-1\\-4&2}$.
+%\solution
+%\input{./solutions/decomp/2/24/solution.tex}
+\item 
+\begin{align*}
+	A = \myvec{3 & -4 \\ -4 & 3} 
+\end{align*}
+
+%\solution
+%\input{./solutions/decomp/2/25/solution.tex}
+\item 
+\begin{align}
+\vec{A} = \myvec{2&-6\\1&-2}
+\label{eq:solutions/decomp/2/26/Q}
+\end{align}
+%\solution
+%\input{./solutions/decomp/2/26/solution.tex}
+%
+\item 
+\begin{align} 
+    \vec{A} = \myvec{4 & 7 \\ 3 & 5}
+\end{align}
+%
+%\solution
+%\input{./solutions/decomp/2/27/solution.tex}
+\item  
+\begin{align}
+\vec{A} = \myvec{4&-3\\6&-2}
+\label{eq:solutions/decomp/2/28/Q}
+\end{align}
+%
+%\solution
+%\input{./solutions/decomp/2/28/solution.tex}
+
+%
+\item   
+\begin{align}
+\vec{A}=\myvec{1&3\\2&4} \label{eq:solutions/decomp/2/31/eq:1}
+\end{align}
+%
+%\solution
+%\input{./solutions/decomp/2/31/solution.tex}
+%
+\item  ,
+\begin{align}
+\vec{A} = \myvec{3&-1\\-4&2}
+\label{eq:solutions/decomp/2/32/eq:p0}
+\end{align}
+%
+%\solution
+%\input{./solutions/decomp/2/32/solution.tex}
+\item   $\myvec{6&1\\-8&2}$
+%\solution
+%\input{./solutions/decomp/2/33/solution.tex}
+\item   \myvec{3&1\\-4&1}
+%
+%\solution
+%\input{./solutions/decomp/2/34/solution.tex}
+%
+\item   $\myvec{55 & -60\\-60 & 20}$
+
+%\solution
+%\input{./solutions/decomp/2/35/solution.tex}
+%
+\item 
+\begin{equation}
+	\vec{V} = \myvec{6 & \frac{17}{2}\\ \frac{17}{2} & 12}
+\end{equation}
+%
+%\solution
+%\input{./solutions/decomp/4/1/36/solution.tex}
+%
+\item 
   
-  \item \myvec{2 &1\\1 &1}\\
-  \solution
-  \input{solutions/su2021/26.tex}
-  \item Obtain the inverse of the following matrix using elementary operations\\
-  A=$\myvec{0 &1 &2\\1 &2 &3\\3 &1 &1}$.\\
-  \solution
-    \input{solutions/su2021/69.tex}
-    \item Find P$^{-1}$, if it exists, given \\
-    P=$\myvec{10 &-2\\-5 &1}$.\\
-    \solution
-    \input{solutions/su2021/70.tex}
+\begin{align}
+    \vec{A} &= \myvec{7 & 3 \\ 2 & 4} 
+\end{align}
+%
+%\solution
+%\input{./solutions/decomp/4/1/37/solution.tex}
+\item  
+\begin{align}
+\vec{V} &= \myvec{14  & -2 \\ -2 & 11}
+\end{align}
+%\solution
+%\input{./solutions/decomp/4/1/38/solution.tex}
+\item 
+ \myvec{1 & 3\\ 2 & 4} 
+%
+%\solution
+%\input{./solutions/decomp/4/1/39/solution.tex}
+%
+\item 
+	\begin{equation}
+	\vec{V} = \myvec{12 & \frac{7}{2}\\ \frac{7}{2} & -10}
+\end{equation}
+
+%\solution
+%\input{./solutions/decomp/4/1/40/solution.tex}
+\item   
+\begin{equation}
+	\vec{V} = \myvec{12 & -5\\ -5 & 2}
+\end{equation}
+
+%
+%\solution
+%\input{./solutions/decomp/4/1/41/solution.tex}
+\item  
+\begin{align}
+    \vec{V} = \myvec{19 & 12 \\12 & 1} \label{eq:solutions/decomp/4/1/42/1.1}
+\end{align}
+
 \end{enumerate}
  
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  13 NOV 2021 11:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  13 NOV 2021 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -625,11 +625,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `gvv_ncert_matrices_chemistry.toc'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 302.
+(Font)              <12> on input line 301.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 302.
+(Font)              <8> on input line 301.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 302.
+(Font)              <6> on input line 301.
  (./solutions/1.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -645,16 +645,17 @@ Overfull \hbox (14.61818pt too wide) detected at line 5
 [] x[]Na[]SO[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x[]H[]O$ []  
  []
 
-[4]) (./solutions/6.tex) [5] (./gvv_ncert_matrices_chemistry.aux)
+[4]) (./solutions/6.tex) (./solutions/7.tex) [5]
+(./gvv_ncert_matrices_chemistry.aux)
 Package rerunfilecheck Info: File `gvv_ncert_matrices_chemistry.out' has not ch
 anged.
 (rerunfilecheck)             Checksum: E97453628E65800D137D6BE042149898;297.
  ) 
 Here is how much of TeX's memory you used:
- 12797 strings out of 478994
- 187632 string characters out of 5864751
+ 12804 strings out of 478994
+ 187720 string characters out of 5864751
  545038 words of memory out of 5000000
- 29951 multiletter control sequences out of 15000+600000
+ 29952 multiletter control sequences out of 15000+600000
  440292 words of font info for 101 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  71i,19n,74p,520b,1009s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -670,10 +671,10 @@ ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1
 f/fonts/type1/tfrupee/tfrupee.pfb></usr/share/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gvv_ncert_matrices_chemistry.pdf (5 pages, 234705 bytes).
+Output written on gvv_ncert_matrices_chemistry.pdf (5 pages, 235729 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 126 named destinations out of 1000 (max. 500000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
+ 129 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
