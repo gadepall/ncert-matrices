@@ -166,10 +166,7 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{
-	%\logo{
-%Computational Approach to School Geometry
-Balancing Chemical Equations using Matrices
-%	}
+	Matrix Equations and the Cayley-Hamilton Theorem
 }
 \author{ G V V Sharma$^{*}$% <-this % stops a space
 	\thanks{*The author is with the Department
@@ -285,13 +282,9 @@ Balancing Chemical Equations using Matrices
 %\IEEEpeerreviewmaketitle
 
 \begin{abstract}
-This manual shows how to balance chemical equations using matrices, 
-based on exercises from the NCERT textbooks from Class 6-12.  
+This manual provides some applications of the Cayley-Hamilton theorem, 
+based on exercises from the NCERT textbooks from Class 6-12.   
 \end{abstract}
-Download python codes using 
-\begin{lstlisting}
-svn co https://github.com/gadepall/school/trunk/ncert/computation/codes
-\end{lstlisting}
 \section{Eigenvalues and Eigenvectors}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
@@ -349,13 +342,13 @@ The above equation is known as the characteristic equation.
 \solution
 %
 \input{./solutions/1.tex}
-  \item If A=$\myvec{\alpha &\beta\\ \gamma &-\alpha}$ is such that $A^{2}=I$,then\\
-  (A)$1+\alpha^{2}+\beta\gamma=0$ (B)$1-\alpha^{}2+\beta\gamma=0$\\
-  (C)$1-\alpha^{2}-\beta\gamma=0$ (D)$1+\alpha^{2}-\beta\gamma=0$\\
-\\
+  \item If $\vec{A}=\myvec{\alpha &\beta\\ \gamma &-\alpha}$ is such that $\vec{A}^{2}=\vec{I}$,then
+\begin{enumerate}
+	\item $1+\alpha^{2}+\beta\gamma=0$ \item $1-\alpha^{2}+\beta\gamma=0$
+	\item $1-\alpha^{2}-\beta\gamma=0$ \item $1+\alpha^{2}-\beta\gamma=0$
+\end{enumerate}
 \solution
 \input{solutions/2.tex}
-%\input{./solutions/matrix/75/solution.tex}
 
 \item If $\vec{A}$ is square matrix such that 
 \begin{equation}
@@ -372,76 +365,8 @@ The above equation is known as the characteristic equation.
 \begin{enumerate}
 \item $\vec{A}$ \item  $\vec{I}-\vec{A}$ \item  $\vec{I}$ \item $3\vec{A}$
 \end{enumerate}
-%
-\solution  From \eqref{eq:gpoly}, 
-\begin{equation}
-\label{eq:glam}
-g\brak{\lambda} = \brak{1+\lambda}^{3}-7\lambda
-\end{equation}
-%
-Also, 
-\begin{equation}
- \vec{A}^2 = \vec{A} \implies \vec{A}^2 - \vec{A} = 0 
-\end{equation}
-Using the Cayley-Hamilton theorem, the eigenvalues satisfy the characteristic equation 
-%
-\begin{equation}\label{eq:solutions/matrix/77/eq1}
-f\brak{\lambda} = \lambda^2 - \lambda = 0 
-\end{equation}
-$\because  f\brak{\lambda}$  is of degree 2 and $g\brak{\lambda} $ is of degree 3, \eqref{eq:glam} can be expressed as
-\begin{align}
-	g\brak{\lambda}	 = f\brak{\lambda}		q\brak{\lambda}	+ a\lambda +b
-\end{align}
-%
-where $a, b$ are real numbers and $q\brak{\lambda}$ is some polynomial.  Thus, 
-\begin{align}
-	g\brak{0}	 &= b = 1
-	\\
-	g\brak{1}	 &= a+b = 1
-	\\
-	\implies a &= 90, b = 1
-	\label{eq:glam_ab}
-\end{align}
-Thus, 
-\begin{align}
-	g\brak{\vec{A}} &= f\brak{\vec{A}}		q\brak{\vec{A}}	+ a\vec{A} +b\vec{I}
-	\\
-	&= \vec{I}
-\end{align}
-upon substituting from \eqref{eq:solutions/matrix/77/eq1} and \eqref{eq:glam_ab}.
-Option c is the valid answer.
-
-\item If 
-\begin{align}
-	\vec{A}=\myvec{1 &2 &3\\3 &-2 &1\\4 &2 &1}
-\end{align}
-then show that 
-\begin{align}
-	\label{eq:chareq4}
-	\vec{A}^3-23\vec{A}-40\vec{I}=0
-\end{align}
-%  
-\solution
- The Characteristic equation is given by
-\begin{align}
-   \abs{\vec{A}-\lambda\vec{I}}&=0
-    \\
-    \implies \mydet{1-\lambda&2&3\\3&-2-\lambda&1\\4&2&1-\lambda}&=0
-    \end{align}
-	which can be expressed as 
-\begin{multline}
-   \implies\brak{1-\lambda}\brak{\brak{-2-\lambda}\brak{1-\lambda}-2}
-   \\
-   -2\brak{3\brak{1-\lambda}-4}+3\brak{6+4\brak{2+\lambda}}=0
-\end{multline}
-and simplified to obtain 
-\begin{align}
- \implies   \lambda^3-23\lambda-40=0.
-\end{align}
-%
-Using the  Cayley-Hamilton Theorem, 	\eqref{eq:chareq4} is obtained.
-%
-\end{enumerate}
+\solution 
+\input{solutions/3.tex}
 
 \item If 
 \begin{align}
@@ -454,28 +379,20 @@ prove that
 	\end{align}
 	%
 \solution 
-From   \eqref{eq:chareq}, the characteristic equation is 
-\begin{align}
-%
- \mydet{1 -\lambda & 0 & 2 \\ 0 & 2 -\lambda & 1 \\ 2 & 0 & 3-\lambda} &= 0  
-\end{align}
-which can be expanded to obtain 
-\begin{align}
-%
- (1-\lambda)(2-\lambda)(3-\lambda) + 2(-2(2-\lambda)) &= 0
-\end{align}
-yielding
-\begin{align}
-%
- \lambda^3 - 6\lambda^2 + 7\lambda + 2 &= 0
-\end{align}
-%
-upon simplification. 
-Using  the Cayley-Hamilton theorem in \eqref{eq:cayley}, 	\eqref{eq:chareq1} is obtained
-%
-%
+\input{solutions/4.tex}
 
+\item If 
+\begin{align}
+	\vec{A}=\myvec{1 &2 &3\\3 &-2 &1\\4 &2 &1}
+\end{align}
+then show that 
+\begin{align}
+	\label{eq:chareq4}
+	\vec{A}^3-23\vec{A}-40\vec{I}=0
+\end{align}
+%  
+\solution
+\input{solutions/5.tex}
 \end{enumerate}
  
 \end{document}
-

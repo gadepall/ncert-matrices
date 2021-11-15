@@ -1,38 +1,39 @@
-We know that the number of atoms of each element remains the
-same, before and after a chemical reaction.
 
-Equation \eqref{eq:solutions/chemistry/7d:1} can be written as 
+ From \eqref{eq:gpoly}, 
+\begin{equation}
+\label{eq:glam}
+g\brak{\lambda} = \brak{1+\lambda}^{3}-7\lambda
+\end{equation}
+%
+Also, 
+\begin{equation}
+ \vec{A}^2 = \vec{A} \implies \vec{A}^2 - \vec{A} = 0 
+\end{equation}
+Using the Cayley-Hamilton theorem, the eigenvalues satisfy the characteristic equation 
+%
+\begin{equation}\label{eq:solutions/matrix/77/eq1}
+f\brak{\lambda} = \lambda^2 - \lambda = 0 
+\end{equation}
+$\because  f\brak{\lambda}$  is of degree 2 and $g\brak{\lambda} $ is of degree 3, \eqref{eq:glam} can be expressed as
 \begin{align}
-x_1BaCl_2 + x_2K_2SO_4 \rightarrow x_3BaSO_4 + x_4KCl\label{eq:solutions/chemistry/7d:2}
+	g\brak{\lambda}	 = f\brak{\lambda}		q\brak{\lambda}	+ a\lambda +b
 \end{align}
-Element wise contribution in forming the respective chemical compound can be written in the form of equation as  
+%
+where $a, b$ are real numbers and $q\brak{\lambda}$ is some polynomial.  Thus, 
 \begin{align}
-Ba : x_1 + 0x_2 - x_3 - 0x_4 = 0\\
-Cl : 2x_1 + 0x_2 - 0x_3 - 1x_4 = 0\\
-K  : 0x_1 + 2x_2 - 0x_3 - 1x_4 = 0\\
-S  : 0x_1 + 1x_2 - 1x_3 - 0x_4 = 0\\
-O  : 0x_1 + 4x_2 - 4x_3 - 0x_4 = 0
+	g\brak{0}	 &= b = 1
+	\\
+	g\brak{1}	 &= a+b = 1
+	\\
+	\implies a &= 90, b = 1
+	\label{eq:glam_ab}
 \end{align}
-In matrix form this can be written as 
+Thus, 
 \begin{align}
-A\vec{x}&=0\\
-  \myvec{1&0&-1&0\\2&0&0&-1\\0&2&0&-1\\0&1&-1&0\\0&4&-4&0}\myvec{x_1\\x_2\\x_3\\x_4}&=\myvec{0\\0\\0\\0\\0}
+	g\brak{\vec{A}} &= f\brak{\vec{A}}		q\brak{\vec{A}}	+ a\vec{A} +b\vec{I}
+	\\
+	&= \vec{I}
 \end{align}
-Using Gaussian Elimination method 
-\begin{align}
-\xleftrightarrow{R_2 \leftrightarrow R_5}\myvec{1&0&-1&0&\vrule&0\\0&4&-4&0&\vrule&0\\0&2&0&-1&\vrule&0\\0&1&-1&0&\vrule&0\\2&0&0&-1&\vrule&0}\\
-\xleftrightarrow{R_5 \leftarrow 2R_1-R_5}\myvec{1&0&-1&0&\vrule&0\\0&4&-4&0&\vrule&0\\0&2&0&-1&\vrule&0\\0&1&-1&0&\vrule&0\\0&0&-2&1&\vrule&0}\\
-\xleftrightarrow[R_4 \leftarrow 4R_4-R_2]{R_3 \leftarrow 2R_3-R_2}\myvec{1&0&-1&0&\vrule&0\\0&4&-4&0&\vrule&0\\0&0&4&-2&\vrule&0\\0&0&0&0&\vrule&0\\0&0&-2&1&\vrule&0}\\
-\xleftrightarrow{R_5 \leftrightarrow R_5}\myvec{1&0&-1&0&\vrule&0\\0&4&-4&0&\vrule&0\\0&0&4&-2&\vrule&0\\0&0&-2&1&\vrule&0\\0&0&0&0&\vrule&0}\\
-\xleftrightarrow{R_4 \leftarrow 2R_4-R_3}\myvec{1&0&-1&0&\vrule&0\\0&4&-4&0&\vrule&0\\0&0&4&-2&\vrule&0\\0&0&0&0&\vrule&0\\0&0&0&0&\vrule&0}
-\end{align}
-Clearly the system is linearly dependent. Therefore by fixing the value of $x_4=2$, one of the possible vectors $\vec{x}$ is
-\begin{align}
-    \vec{x}=\myvec{1\\1\\1\\2}
-\end{align}
-Hence by putting the values of $x_1,x_2,x_3,x_4$ in equation \eqref{eq:solutions/chemistry/7d:1} we get our balanced chemical equation as 
-\begin{align}
-BaCl_2 + K_2SO_4 \rightarrow BaSO_4 + 2KCl
-\end{align}
-
+upon substituting from \eqref{eq:solutions/matrix/77/eq1} and \eqref{eq:glam_ab}.
+Option c is the valid answer.
 

@@ -1,120 +1,21 @@
 
-Let the balanced version of \eqref{eq:chem_balance} be 
-%
+From   \eqref{eq:chareq}, the characteristic equation is 
 \begin{align}
-\label{eq:chem_balance_unsol}
-x_1Fe+x_2H_2 O &\rightarrow x_3Fe_3 O_4 + x_4H_2
+%
+ \mydet{1 -\lambda & 0 & 2 \\ 0 & 2 -\lambda & 1 \\ 2 & 0 & 3-\lambda} &= 0  
+\end{align}
+which can be expanded to obtain 
+\begin{align}
+%
+ (1-\lambda)(2-\lambda)(3-\lambda) + 2(-2(2-\lambda)) &= 0
+\end{align}
+yielding
+\begin{align}
+%
+ \lambda^3 - 6\lambda^2 + 7\lambda + 2 &= 0
 \end{align}
 %
-which results in the following equations
+upon simplification. 
+Using  the Cayley-Hamilton theorem in \eqref{eq:cayley}, 	\eqref{eq:chareq1} is obtained
 %
-\begin{align}
-\begin{split}
-\brak{x_1 -3x_3}Fe &= 0
-\\
-\brak{2x_2 -2x_4}H &= 0
-\\
-\brak{x_2 -4x_3}O &= 0
-\end{split}
-\end{align}
-which can be expressed as
-\begin{align}
-\begin{split}
-x_1 + 0.x_2 -3x_3 +0.x_4&= 0
-\\
-0.x_1+2x_2 +0.x_3-2x_4 &= 0
-\\
-0.x_1+x_2 -4x_3+ 0.x_4 &= 0
-\end{split}
-\end{align}
 %
-resulting in the matrix equation
-\begin{align}
-\label{eq:chem_balance_mat_eq}
-\begin{split}
-\myvec{
-1 & 0 & -3 & 0
-\\
-0 & 2 & 0 & -2
-\\
-0 & 1 & -4 & 0
-}
-\vec{x} &= \vec{0}
-\end{split}
-\end{align}
-%
-where
-\begin{align}
-\vec{x} = \myvec{x_1 \\ x_2 \\ x_3 \\ x_4} 
-\end{align}
-%\item Solve \eqref{eq:chem_balance_unsol} by row reducing 
-%the matrix in \eqref{eq:chem_balance_mat_eq}.
-%\\
-%\solution  
-\eqref{eq:chem_balance_mat_eq} can be row reduced as follows
-%
-\begin{align}
-\label{eq:chem_balance_mat_row}
-\myvec{
-1 & 0 & -3 & 0
-\\
-0 & 2 & 0 & -2
-\\
-0 & 1 & -4 & 0
-}
- \xleftrightarrow[]{R_2 \leftarrow \frac{R_2}{2}}
-\myvec{
-1 & 0 & -3 & 0
-\\
-0 & 1 & 0 & -1
-\\
-0 & 1 & -4 & 0
-}
-\\
- \xleftrightarrow[]{R_3\leftarrow R_3-R_2}
-\myvec{
-1 & 0 & -3 & 0
-\\
-0 & 1 & 0 & -1
-\\
-0 & 0 & -4 & 1
-}
-\\
- \xleftrightarrow[]{R_1\leftarrow 4R_1-3R_3}
-\myvec{
-4 & 0 & 0 & -3
-\\
-0 & 1 & 0 & -1
-\\
-0 & 0 & -4 & 1
-}
-\\
- \xleftrightarrow[R_3 \leftarrow -\frac{1}{4}R_3]{R_1\leftarrow \frac{1}{4}}
-\myvec{
-1 & 0 & 0 & -\frac{3}{4}
-\\
-0 & 1 & 0 & -1
-\\
-0 & 0 & 1 & -\frac{1}{4}
-}
-\end{align}
-%
-Thus, 
-\begin{align}
-\label{eq:chem_balance_mat_sol}
-x_1 &= \frac{3}{4}x_4, x_2 = x_4, x_3 = \frac{1}{4}x_4
-\\
-\\
-\implies 
-\vec{x} &= x_4\myvec{\frac{3}{4} \\ 1 \\ \frac{1}{4} \\ 1}= \myvec{3 \\ 4 \\ 1 \\ 4}
-\end{align}
-%
-upon substituting $x_4 = 4$.
-%
-\eqref{eq:chem_balance_unsol} then becomes
-%
-\begin{align}
-\label{eq:chem_balance_final}
-3Fe+4H_2 O &\rightarrow Fe_3 O_4 + 4H_2
-\end{align}
-
