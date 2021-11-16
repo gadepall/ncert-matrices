@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  11 NOV 2021 09:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  16 NOV 2021 09:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**gvv_ncert_matrices_inverse.tex
-(./gvv_ncert_matrices_inverse.tex
+**gvv_ncert_matrices_det.tex
+(./gvv_ncert_matrices_det.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (/usr/share/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
@@ -302,7 +302,12 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_shortintertext_sep=\dimen181
 \xmathstrut@box=\box56
 \xmathstrut@dim=\dimen182
-) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/home/user/texmf/tex/latex/tfrupee/tfrupee.sty
+Package: tfrupee 2010/12/15 LaTeX Support for the TechFat Rupee symbols by Tech
+Fat (http://techfat.blogspot.com/2010/07/new-open-source-india-rupee-font.html)
+. Adapted for use with TeX by Palle Jorgensen, hamselv(a)pallej.dk
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
 
 (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -517,8 +522,8 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count302
 \l__pdf_internal_box=\box61
 )
-(./gvv_ncert_matrices_inverse.aux)
-\openout1 = `gvv_ncert_matrices_inverse.aux'.
+(./gvv_ncert_matrices_det.aux)
+\openout1 = `gvv_ncert_matrices_det.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
@@ -562,9 +567,9 @@ LaTeX Info: Redefining \ref on input line 89.
 LaTeX Info: Redefining \pageref on input line 89.
 LaTeX Info: Redefining \nameref on input line 89.
 
-(./gvv_ncert_matrices_inverse.out) (./gvv_ncert_matrices_inverse.out)
+(./gvv_ncert_matrices_det.out) (./gvv_ncert_matrices_det.out)
 \@outlinefile=\write3
-\openout3 = `gvv_ncert_matrices_inverse.out'.
+\openout3 = `gvv_ncert_matrices_det.out'.
 
 \c@lstlisting=\count304
 
@@ -596,74 +601,185 @@ e
 \c@lemma=\count314
 \c@example=\count315
 \c@rem=\count316
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 247.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 244.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14> on input line 247.
+(Font)              <14> on input line 244.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.79996> on input line 247.
+(Font)              <9.79996> on input line 244.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 247.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 247
+(Font)              <7> on input line 244.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 244
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 247
+LaTeX Font Info:    Trying to load font information for U+msb on input line 244
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(./gvv_ncert_matrices_inverse.toc)
+(./gvv_ncert_matrices_det.toc)
 \tf@toc=\write4
-\openout4 = `gvv_ncert_matrices_inverse.toc'.
+\openout4 = `gvv_ncert_matrices_det.toc'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 300.
+(Font)              <12> on input line 296.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 300.
+(Font)              <8> on input line 296.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 300.
- (./solutions/1.tex) (./solutions/2.tex
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              <6> on input line 296.
 
-
-]) (./solutions/3.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
-(./solutions/4.tex [2]) [3
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./gvv_ncert_matrices_inverse.aux)
-Package rerunfilecheck Info: File `gvv_ncert_matrices_inverse.out' has not chan
-ged.
-(rerunfilecheck)             Checksum: 2B69345D12B0540098883C01E5D2EDED;181.
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 419--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--443
+
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 438--443
+\OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Choose the cor-rect an-swer in
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Underfull \hbox (badness 6300) in paragraph at lines 503--505
+[]\OT1/ptm/m/n/12 Using Co-fac-tors of el-e-ments of sec-ond
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--601
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--605
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--609
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--615
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--615
+\OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Solve the sys-tem lin-ear
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 643--652
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 652--653
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--656
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--660
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 700--706
+\OML/cmm/m/it/12 A[] \OT1/cmr/m/n/12 = []$ \OT1/ptm/m/n/12 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 700--706
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 706--712
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--725
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+Overfull \hbox (9.48709pt too wide) in paragraph at lines 735--740
+[]$[]$\OT1/ptm/m/n/12 =3(a+b+c)(ab+bc+ca) 
+ []
+
+[5
+
+] (./gvv_ncert_matrices_det.aux)
+Package rerunfilecheck Info: File `gvv_ncert_matrices_det.out' has not changed.
+
+(rerunfilecheck)             Checksum: 76E5A610E6D688DCC8993B32E174FCDF;186.
  ) 
 Here is how much of TeX's memory you used:
- 12665 strings out of 478994
- 185608 string characters out of 5864752
- 534423 words of memory out of 5000000
- 29914 multiletter control sequences out of 15000+600000
- 439864 words of font info for 100 fonts, out of 8000000 for 9000
+ 12495 strings out of 478994
+ 184219 string characters out of 5864751
+ 531727 words of memory out of 5000000
+ 29665 multiletter control sequences out of 15000+600000
+ 440292 words of font info for 101 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 71i,18n,74p,518b,1009s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,14n,74p,514b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.p
-fb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gvv_ncert_matrices_inverse.pdf (3 pages, 132787 bytes).
+c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb></home/user/texmf/fonts/type1/tfrupee/tfrupee.pfb></usr/share/te
+xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/ur
+w/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on gvv_ncert_matrices_det.pdf (5 pages, 219920 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 239 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 130 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
