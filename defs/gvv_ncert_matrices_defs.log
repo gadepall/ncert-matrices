@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  20 NOV 2021 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  21 NOV 2021 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -629,40 +629,38 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 412--418
+] (./solutions/cayley/1.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 16--400
 \OT1/ptm/m/n/12 upon sim-pli-fi-ca-tion. Us-ing the Cayley-
  []
 
 
-Underfull \hbox (badness 3343) in paragraph at lines 412--418
+Underfull \hbox (badness 3343) in paragraph at lines 16--400
 \OT1/ptm/m/n/12 Hamilton the-o-rem in [], [] is
  []
 
-[2] [3]
-Overfull \hbox (2.47757pt too wide) in paragraph at lines 725--725
-[] 
- []
+(./solutions/cayley/2.tex) (./solutions/cayley/3.tex) [2]
+(./solutions/cayley/4.tex) (./solutions/rank/1.tex) [3] (./solutions/rank/2.tex
+) (./solutions/rank/3.tex) (./solutions/inverse/1.tex)
+(./solutions/inverse/2.tex [4]) (./solutions/inverse/3.tex
+Underfull \vbox (badness 3396) has occurred while \output is active []
 
-[4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
-[6
+)
+(./solutions/inverse/4.tex [5]) [6
 
 ] (./gvv_ncert_matrices_defs.aux)
 Package rerunfilecheck Info: File `gvv_ncert_matrices_defs.out' has not changed
 .
-(rerunfilecheck)             Checksum: 61F985B92F48320856D7A32A59226920;1287.
+(rerunfilecheck)             Checksum: C8BD64BC199D99A1D9FA02289C487F4A;1315.
  ) 
 Here is how much of TeX's memory you used:
- 12509 strings out of 478994
- 184812 string characters out of 5864751
- 536331 words of memory out of 5000000
- 29675 multiletter control sequences out of 15000+600000
+ 12549 strings out of 478994
+ 185628 string characters out of 5864751
+ 540331 words of memory out of 5000000
+ 29686 multiletter control sequences out of 15000+600000
  441000 words of font info for 101 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 71i,20n,74p,515b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,20n,74p,515b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
@@ -678,7 +676,7 @@ onts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 ></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on gvv_ncert_matrices_defs.pdf (6 pages, 177797 bytes).
+Output written on gvv_ncert_matrices_defs.pdf (6 pages, 179890 bytes).
 PDF statistics:
  311 PDF objects out of 1000 (max. 8388607)
  283 compressed objects within 3 object streams

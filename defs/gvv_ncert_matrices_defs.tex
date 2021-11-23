@@ -354,18 +354,20 @@ Then,
 \end{align}
 
 \end{enumerate}
-\section{Rank of a Matrix}
+\subsection{Rank of a Matrix}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
 \numberwithin{equation}{enumi}
-\item The rank of a matrix is defined as the number of nonzero rows obtained after row reduction.
+\item The rank of a matrix is defined as the number of linearly independent rows.  This is also known as the row rank.
+\item Row rank = Column rank.
+\item The rank of a matrix is obtained as the number of nonzero rows obtained after row reduction.
 \item An $n \times n$ matrix is invertible if and only if its rank is $n$.
 \end{enumerate}
-\section{Inverse of a Matrix}
+\subsection{Inverse of a Matrix}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
 \numberwithin{equation}{enumi}
 \item For a $2 \times 2$ matrix 
 \begin{align}
@@ -395,26 +397,8 @@ prove that
 	\end{align}
 	%
 \solution 
-From   \eqref{eq:chareq}, the characteristic equation is 
-\begin{align}
 %
- \mydet{1 -\lambda & 0 & 2 \\ 0 & 2 -\lambda & 1 \\ 2 & 0 & 3-\lambda} &= 0  
-\end{align}
-which can be expanded to obtain 
-\begin{align}
-%
- (1-\lambda)(2-\lambda)(3-\lambda) + 2(-2(2-\lambda)) &= 0
-\end{align}
-yielding
-\begin{align}
-%
- \lambda^3 - 6\lambda^2 + 7\lambda + 2 &= 0
-\end{align}
-%
-upon simplification. 
-Using  the Cayley-Hamilton theorem in \eqref{eq:cayley}, 	\eqref{eq:chareq1} is obtained
-%
-%
+		\input{solutions/cayley/1.tex}
 \item If 
 \begin{align}
 	\vec{A}=\myvec{3 &1\\-1 &2},
@@ -426,14 +410,7 @@ Using  the Cayley-Hamilton theorem in \eqref{eq:cayley}, 	\eqref{eq:chareq1} is 
 		\end{align}
 	%
 \solution
-The characteristic equation is 
-\begin{align}
-\mydet{\vec{A}-\lambda \vec{I}}&=0
-\\ \implies \mydet{3-\lambda & 1 \\ -1 & 2-\lambda}&=0
-\\ \implies (3-\lambda)(2-\lambda)+1&=0
-\\	\text{or, }\lambda^2-5\lambda+7=0
-\end{align}
-Using the Cayley-Hamilton theorem, \eqref{eq:chareq2} is obtained.
+		\input{solutions/cayley/2.tex}
 %
 \item If $\vec{A}$ is square matrix such that 
 \begin{equation}
@@ -451,44 +428,9 @@ Using the Cayley-Hamilton theorem, \eqref{eq:chareq2} is obtained.
 \item $\vec{A}$ \item  $\vec{I}-\vec{A}$ \item  $\vec{I}$ \item $3\vec{A}$
 \end{enumerate}
 %
-\solution  From \eqref{eq:gpoly}, 
-\begin{equation}
-\label{eq:glam}
-g\brak{\lambda} = \brak{1+\lambda}^{3}-7\lambda
-\end{equation}
-%
-Also, 
-\begin{equation}
- \vec{A}^2 = \vec{A} \implies \vec{A}^2 - \vec{A} = 0 
-\end{equation}
-Using the Cayley-Hamilton theorem, the eigenvalues satisfy the characteristic equation 
-%
-\begin{equation}\label{eq:solutions/matrix/77/eq1}
-f\brak{\lambda} = \lambda^2 - \lambda = 0 
-\end{equation}
-$\because  f\brak{\lambda}$  is of degree 2 and $g\brak{\lambda} $ is of degree 3, \eqref{eq:glam} can be expressed as
-\begin{align}
-	g\brak{\lambda}	 = f\brak{\lambda}		q\brak{\lambda}	+ a\lambda +b
-\end{align}
-%
-where $a, b$ are real numbers and $q\brak{\lambda}$ is some polynomial.  Thus, 
-\begin{align}
-	g\brak{0}	 &= b = 1
-	\\
-	g\brak{1}	 &= a+b = 1
-	\\
-	\implies a &= 90, b = 1
-	\label{eq:glam_ab}
-\end{align}
-Thus, 
-\begin{align}
-	g\brak{\vec{A}} &= f\brak{\vec{A}}		q\brak{\vec{A}}	+ a\vec{A} +b\vec{I}
-	\\
-	&= \vec{I}
-\end{align}
-upon substituting from \eqref{eq:solutions/matrix/77/eq1} and \eqref{eq:glam_ab}.
-Option c is the valid answer.
+\solution  
 
+		\input{solutions/cayley/3.tex}
 \item If 
 \begin{align}
 	\vec{A}=\myvec{1 &2 &3\\3 &-2 &1\\4 &2 &1}
@@ -500,24 +442,7 @@ then show that
 \end{align}
 %  
 \solution
- The Characteristic equation is given by
-\begin{align}
-   \abs{\vec{A}-\lambda\vec{I}}&=0
-    \\
-    \implies \mydet{1-\lambda&2&3\\3&-2-\lambda&1\\4&2&1-\lambda}&=0
-    \end{align}
-	which can be expressed as 
-\begin{multline}
-   \implies\brak{1-\lambda}\brak{\brak{-2-\lambda}\brak{1-\lambda}-2}
-   \\
-   -2\brak{3\brak{1-\lambda}-4}+3\brak{6+4\brak{2+\lambda}}=0
-\end{multline}
-and simplified to obtain 
-\begin{align}
- \implies   \lambda^3-23\lambda-40=0.
-\end{align}
-%
-Using the  Cayley-Hamilton Theorem, 	\eqref{eq:chareq4} is obtained.
+		\input{solutions/cayley/4.tex}
 %
 \end{enumerate}
 
@@ -624,39 +549,9 @@ Multiplying the above expressions,
 Will the rails cross each other?
 %
 \\
-\solution The above equations can be expressed as the matrix equation
-\begin{align}
-\myvec{1 & 2\\2 & 4} \vec{x} = \myvec{4\\12}
-\end{align}
-%
-The augmented matrix for the above equation is row reduced as follows
-\begin{align}
-\myvec{1 & 2 & 4\\2 & 4 & 12} 
-\xleftrightarrow {R_2\leftarrow \frac{R_2}{2}}\myvec{1 & 2 & 4\\1 & 2 & 6} 
-\\
-%\myvec{1 & 2 & 4\\2 & 4 & 12} 
-\xleftrightarrow {R_2\leftarrow R_2 - R_1}\myvec{1 & 2 & 4\\0 & 0 & 2} 
-\label{eq:line_aug}
-\end{align}
-%
-$\because$ row reduction of the $2\times 3$ matrix
-%
-\begin{align}
-\myvec{1 & 2 & 4\\2 & 4 & 12} 
-\end{align}
-%
-results in a matrix with 2 nonzero rows, its rank is 2.  Similarly, the rank of the matrix 
-%
-\begin{align}
-\myvec{1 & 2\\2 & 4} 
-\end{align}
-is 1, from \ref{eq:line_aug}. 
-%
-\begin{align}
-\because rank \myvec{1 & 2\\2 & 4} \ne rank\myvec{1 & 2 & 4\\2 & 4 & 12},  
-\end{align}
-%
-\eqref{eq:line_mat_eq} has no solution.
+\solution 
+
+		\input{solutions/rank/1.tex}
 %
 %
 
@@ -672,24 +567,9 @@ is 1, from \ref{eq:line_aug}.
 %
 is consistent. 
 \\
-\solution The above equations can be expressed as the matrix equation
-\begin{align}
-\myvec{1 & 3\\2 & -3} \vec{x} = \myvec{6\\12}
-\end{align}
-%
-The augmented matrix for the above equation is row reduced as follows
-\begin{align}
-\myvec{1 & 3 & 6\\2 & -3 & 12} 
-\xleftrightarrow {R_2\leftarrow \frac{R_2-2R_1}{-9}}
-%\myvec{1 & 3 & 6\\0 & -9 & 0} 
-\\
-\myvec{1 & 3 & 6\\0 & 1 & 0} 
-\xleftrightarrow {R_1\leftarrow R_1 - 3R_2}\myvec{1 & 0 & 6\\0 & 1 & 0} 
-\\
-\implies \vec{x} = \myvec{6\\0}
-\end{align}
-%
-which is the solution of \ref{eq:line_mat_eq}.
+\solution 
+
+		\input{solutions/rank/2.tex}
 %
 \item Find whether the following pair of equations has no solution, unique solution or infinitely many solutions: 
 %
@@ -703,28 +583,9 @@ which is the solution of \ref{eq:line_mat_eq}.
 \end{align}
 %
 \\
-\solution The above equations can be expressed as the matrix equation
-\begin{align}
-\myvec{5 & -8\\3 & -\frac{24}{5}} \vec{x} = -\myvec{1\\ \frac{3}{5}}
-\end{align}
-%
-The augmented matrix for the above equation is row reduced as follows
-\begin{align}
-\myvec{5 & -8 & -1 \\3 & -\frac{24}{5} & -\frac{3}{5}} 
-\xleftrightarrow {R_2\leftarrow 5R_2}\myvec{5 & -8 & 1\\15 & -24 & -3} 
-\\
-%\myvec{5 & -8 & 1\\15 & -24 & -3} 
-\xleftrightarrow {R_2\leftarrow R_2 - 3R_1}\myvec{5 & -8 & 1\\0 & 0 & 0} 
-\end{align}
-%
-%
-\begin{align}
-\because rank \myvec{5 & -8\\3 & -\frac{24}{5}} &= rank \myvec{5 & -8 & 1 \\3 & -\frac{24}{5} & -\frac{3}{5}} 
-\\
-= 1 < dim \myvec{5 & -8\\3 & -\frac{24}{5}} =2,
-\end{align}
-%
-\eqref{eq:line_check_sol3} has infinitely many solutions.
+\solution 
+
+		\input{solutions/rank/3.tex}
 %
 %
 \end{enumerate}
@@ -737,113 +598,22 @@ The augmented matrix for the above equation is row reduced as follows
 \item Using elementary transforamtions,find the inverse of   
 \myvec{1 &-1\\2 &3}\\
   \solution
+		\input{solutions/inverse/1.tex}
 %\  \input{solutions/su2021/25.tex}
-   Given that
-    \begin{align}
-    \vec{A} = \myvec{1 & -1 \\ 2 & 3}
-    \end{align}
-    The augmented matrix $ [\vec{A} | \vec{I}]$ is as given below:- 
-    \begin{align}
-	    \myvec{1 & -1 & \vrule & 1 & 0 \\[1 pt]  2 & 3 & \vrule & 0 & 1}
-    \end{align}
-    We apply the elementary row operations on $ [\vec{A} | \vec{I}]$ as follows :-
-    \begin{align}
-    [\vec{A} | \vec{I}] = \myvec{1 & -1 & \vrule & 1 & 0 \\ 2 & 3 & \vrule & 0 & 1}
-    \\
-    \xleftrightarrow{R_2\leftarrow R_2-2R_1}   
-    \myvec{1 & -1 & \vrule & 1 & 0 \\ 0 & 5 & \vrule & -2 & 1}
-    \\
-    \xleftrightarrow{R_2\leftarrow \frac{R_2}{5}}
-    \myvec{1 & -1 & \vrule & 1 & 0 \\ 0 & 1 & \vrule & \frac {-2}{5} & \frac {1}{5}}
-    \\
-    \xleftrightarrow{R_2\leftarrow R_1+R_2}
-    \myvec{1 & 0 & \vrule & \frac{3}{5} & \frac{1}{5}  \\ 0 & 1 & \vrule & \frac{-2}{5} & \frac{1}{5}}
-    \end{align}
-    By performing elementary transformations on augmented matrix$ [\vec{A} | \vec{I}]$ , we obtained the augmented matrix in the form $ [\vec{I} | \vec{A}]$. 
-    Hence we can conclude that the matrix A is invertible and 
-    \begin{align}
-   \vec{A^{-1}}=\myvec {\frac{3}{5} & \frac{1}{5}  \\  \frac{-2}{5} & \frac{1}{5}} 
-    \end{align}
 \item Using elementary transforamtions, find the inverse of   
    \myvec{2 &1\\1 &1}\\
   \solution
+		\input{solutions/inverse/2.tex}
 %  \input{solutions/su2021/26.tex}
-Given that
-\begin{align}
-\vec{A} = \myvec{2 & 1 \\ 1 & 1}
-\end{align}
-The augmented matrix $ [\vec{A} | \vec{I}]$ is as given below:- 
-\begin{align}
-\myvec{2 & 1 & \vrule & 1 & 0 \\ 1 & 1 & \vrule & 0 & 1}
-\end{align}
-We apply the elementary row operations on $ [\vec{A} | \vec{I}]$ as follows :-
-\begin{align}
-[\vec{A} | \vec{I}] = \myvec{2 & 1 & \vrule & 1 & 0 \\ 1 & 1 & \vrule & 0 & 1}
-\\
-\xleftrightarrow{R_1\leftarrow R_1-R_2}   
-\myvec{1 & 0 & \vrule & 1 & -1 \\ 1 & 1 & \vrule & 0 & 1}
-\\
-\xleftrightarrow{R_2\leftarrow R_2-R_1}
-\myvec{1 & 0 & \vrule & 1 & -1 \\ 0 & 1 & \vrule & -1 & 2}
-\end{align}
-By performing elementary transformations on augmented matrix$ [\vec{A} | \vec{I}]$ , we obtained the augmented matrix in the form $ [\vec{I} | \vec{A}]$. 
-Hence we can conclude that the matrix A is invertible and inverse of the matrix is
-\begin{align}
-\vec{A^{-1}}=\myvec {1 & -1 \\  -1 & 2} 
-\end{align}
 \item Obtain the inverse of the following matrix using elementary operations\\
   A=$\myvec{0 &1 &2\\1 &2 &3\\3 &1 &1}$.\\
   \solution
+		\input{solutions/inverse/3.tex}
  %   \input{solutions/su2021/69.tex}
-    Given that
-    \begin{align}
-    \vec{A}& =\myvec {0 & 1 & 2\\1 & 2 & 3\\3 & 1 & 1},
-    \end{align}
-     The augmented matrix $[\vec{A} | \vec{I}]$ is 
-    \begin{align}
-    \myvec{0 & 1 & 2 & \vrule & 1 & 0 & 0\\1 & 2 & 3 & \vrule & 0 & 1 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
-    \end{align}
-    Applying elementary row operations on $[\vec{A} | \vec{I}]$, 
-    \begin{align}
-    [\vec{A} | \vec{I}] = \myvec{0 & 1 & 2 & \vrule & 1 & 0 & 0\\1 & 2 & 3 & \vrule & 0 & 1 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
-    \\
-    \xleftrightarrow{R_1\leftrightarrow R_2}   
-    \myvec{1 & 2 & 3 & \vrule & 0 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
-    \\
-    \xleftrightarrow{R_3\leftarrow R_3-3R_1}   
-    \myvec{1 & 2 & 3 & \vrule & 0 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & -5 & -8 & \vrule & 0 & -3 & 1}
-    \\
-    \xleftrightarrow{R_1\leftarrow R_1-2R_2}  
-    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & -5 & -8 & \vrule & 0 & -3 & 1}
-    \\
-    \xleftrightarrow{R_3\leftarrow R_3+5R_2}  
-    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 2 & \vrule & 5 & -3 & 1}
-    \\
-    \xleftrightarrow{R_3\leftarrow R_3/2}
-    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\ 0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
-    \\
-    \xleftrightarrow{R_1\leftarrow R_1+R_3}
-    \myvec{1 & 0 & 0 & \vrule & \frac{1}{2} & \frac{-1}{2} & \frac{1}{2}\\ 0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
-    \\
-    \xleftrightarrow{R_2\leftarrow R_2-2R_3}
-    \myvec{1 & 0 & 0 & \vrule & \frac{1}{2} & \frac{-1}{2} & \frac{1}{2}\\ 0 & 1 & 0 & \vrule & -4 & 3 & -1\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
-    \end{align}
-    By performing elementary transformations on augmented matrix$ [\vec{A} | \vec{I}]$, we obtained the augmented matrix in the form $ [\vec{I} | \vec{A}]$. 
-    Hence we can conclude that the matrix A is invertible and inverse of the matrix is
-    \begin{align}
-\vec{A^{-1}}=\myvec { \frac{1}{2} & \frac{-1}{2} & \frac{1}{2} \\  -4 & 3 & -1\\ \frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
-    \end{align}
     \item Find P$^{-1}$, if it exists, given \\
     P=$\myvec{10 &-2\\-5 &1}$.\\
     \solution
-Using row reduction, 
-%
-\begin{align}
-\myvec{10 & -2 \\-5 & 1}
-\xleftrightarrow {R_2 \leftarrow R_2+\frac{R_1}{2}}\myvec{10& -2& \\0 & 0}
-\end{align} 
-Since we obtain a zero row, 
-$\vec {P}^{-1} $ does not exist.
+		\input{solutions/inverse/4.tex}
 %    \input{solutions/su2021/70.tex}
  
 \end{enumerate}

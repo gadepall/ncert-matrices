@@ -1,0 +1,34 @@
+
+		The above equations can be expressed as the matrix equation
+\begin{align}
+\myvec{1 & 2\\2 & 4} \vec{x} = \myvec{4\\12}
+\end{align}
+%
+The augmented matrix for the above equation is row reduced as follows
+\begin{align}
+\myvec{1 & 2 & 4\\2 & 4 & 12} 
+\xleftrightarrow {R_2\leftarrow \frac{R_2}{2}}\myvec{1 & 2 & 4\\1 & 2 & 6} 
+\\
+%\myvec{1 & 2 & 4\\2 & 4 & 12} 
+\xleftrightarrow {R_2\leftarrow R_2 - R_1}\myvec{1 & 2 & 4\\0 & 0 & 2} 
+\label{eq:line_aug}
+\end{align}
+%
+$\because$ row reduction of the $2\times 3$ matrix
+%
+\begin{align}
+\myvec{1 & 2 & 4\\2 & 4 & 12} 
+\end{align}
+%
+results in a matrix with 2 nonzero rows, its rank is 2.  Similarly, the rank of the matrix 
+%
+\begin{align}
+\myvec{1 & 2\\2 & 4} 
+\end{align}
+is 1, from \ref{eq:line_aug}. 
+%
+\begin{align}
+\because rank \myvec{1 & 2\\2 & 4} \ne rank\myvec{1 & 2 & 4\\2 & 4 & 12},  
+\end{align}
+%
+\eqref{eq:line_mat_eq} has no solution.

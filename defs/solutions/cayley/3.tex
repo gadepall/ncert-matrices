@@ -1,0 +1,39 @@
+
+		From \eqref{eq:gpoly}, 
+\begin{equation}
+\label{eq:glam}
+g\brak{\lambda} = \brak{1+\lambda}^{3}-7\lambda
+\end{equation}
+%
+Also, 
+\begin{equation}
+ \vec{A}^2 = \vec{A} \implies \vec{A}^2 - \vec{A} = 0 
+\end{equation}
+Using the Cayley-Hamilton theorem, the eigenvalues satisfy the characteristic equation 
+%
+\begin{equation}\label{eq:solutions/matrix/77/eq1}
+f\brak{\lambda} = \lambda^2 - \lambda = 0 
+\end{equation}
+$\because  f\brak{\lambda}$  is of degree 2 and $g\brak{\lambda} $ is of degree 3, \eqref{eq:glam} can be expressed as
+\begin{align}
+	g\brak{\lambda}	 = f\brak{\lambda}		q\brak{\lambda}	+ a\lambda +b
+\end{align}
+%
+where $a, b$ are real numbers and $q\brak{\lambda}$ is some polynomial.  Thus, 
+\begin{align}
+	g\brak{0}	 &= b = 1
+	\\
+	g\brak{1}	 &= a+b = 1
+	\\
+	\implies a &= 90, b = 1
+	\label{eq:glam_ab}
+\end{align}
+Thus, 
+\begin{align}
+	g\brak{\vec{A}} &= f\brak{\vec{A}}		q\brak{\vec{A}}	+ a\vec{A} +b\vec{I}
+	\\
+	&= \vec{I}
+\end{align}
+upon substituting from \eqref{eq:solutions/matrix/77/eq1} and \eqref{eq:glam_ab}.
+Option c is the valid answer.
+

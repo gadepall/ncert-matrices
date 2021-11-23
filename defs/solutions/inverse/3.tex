@@ -1,0 +1,39 @@
+
+    Given that
+    \begin{align}
+    \vec{A}& =\myvec {0 & 1 & 2\\1 & 2 & 3\\3 & 1 & 1},
+    \end{align}
+     The augmented matrix $[\vec{A} | \vec{I}]$ is 
+    \begin{align}
+    \myvec{0 & 1 & 2 & \vrule & 1 & 0 & 0\\1 & 2 & 3 & \vrule & 0 & 1 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
+    \end{align}
+    Applying elementary row operations on $[\vec{A} | \vec{I}]$, 
+    \begin{align}
+    [\vec{A} | \vec{I}] = \myvec{0 & 1 & 2 & \vrule & 1 & 0 & 0\\1 & 2 & 3 & \vrule & 0 & 1 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
+    \\
+    \xleftrightarrow{R_1\leftrightarrow R_2}   
+    \myvec{1 & 2 & 3 & \vrule & 0 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\3 & 1 & 1 & \vrule & 0 & 0 & 1}
+    \\
+    \xleftrightarrow{R_3\leftarrow R_3-3R_1}   
+    \myvec{1 & 2 & 3 & \vrule & 0 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & -5 & -8 & \vrule & 0 & -3 & 1}
+    \\
+    \xleftrightarrow{R_1\leftarrow R_1-2R_2}  
+    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & -5 & -8 & \vrule & 0 & -3 & 1}
+    \\
+    \xleftrightarrow{R_3\leftarrow R_3+5R_2}  
+    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 2 & \vrule & 5 & -3 & 1}
+    \\
+    \xleftrightarrow{R_3\leftarrow R_3/2}
+    \myvec{1 & 0 & -1 & \vrule & -2 & 1 & 0\\ 0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
+    \\
+    \xleftrightarrow{R_1\leftarrow R_1+R_3}
+    \myvec{1 & 0 & 0 & \vrule & \frac{1}{2} & \frac{-1}{2} & \frac{1}{2}\\ 0 & 1 & 2 & \vrule & 1 & 0 & 0\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
+    \\
+    \xleftrightarrow{R_2\leftarrow R_2-2R_3}
+    \myvec{1 & 0 & 0 & \vrule & \frac{1}{2} & \frac{-1}{2} & \frac{1}{2}\\ 0 & 1 & 0 & \vrule & -4 & 3 & -1\\0 & 0 & 1 &\vrule &\frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
+    \end{align}
+    By performing elementary transformations on augmented matrix$ [\vec{A} | \vec{I}]$, we obtained the augmented matrix in the form $ [\vec{I} | \vec{A}]$. 
+    Hence we can conclude that the matrix A is invertible and inverse of the matrix is
+    \begin{align}
+\vec{A^{-1}}=\myvec { \frac{1}{2} & \frac{-1}{2} & \frac{1}{2} \\  -4 & 3 & -1\\ \frac{5}{2} &\frac{-3}{2} &\frac{1}{2}}
+    \end{align}
