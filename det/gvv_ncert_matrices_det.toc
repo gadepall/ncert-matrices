@@ -1,2 +1,6 @@
-\contentsline {section}{\numberline {1}Determinants}{1}{section.1}%
-\contentsline {section}{\numberline {2}Examples}{1}{section.2}%
+\contentsline {section}{\numberline {1}Minor and Cofactor}{1}{section.1}%
+\contentsline {section}{\numberline {2}Adjoint}{1}{section.2}%
+\contentsline {section}{\numberline {3}Properties}{2}{section.3}%
+\contentsline {section}{\numberline {4}Cramer's Rule}{2}{section.4}%
+\contentsline {section}{\numberline {5}Algebra}{2}{section.5}%
+\contentsline {section}{\numberline {6}Arithmetic}{4}{section.6}%

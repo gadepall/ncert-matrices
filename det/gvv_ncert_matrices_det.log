@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  16 NOV 2021 09:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  24 NOV 2021 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -625,147 +625,128 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `gvv_ncert_matrices_det.toc'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 296.
+(Font)              <12> on input line 295.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 296.
+(Font)              <8> on input line 295.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 296.
+(Font)              <6> on input line 295.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 6300) in paragraph at lines 300--302
+[]\OT1/ptm/m/n/12 Using Co-fac-tors of el-e-ments of sec-ond
+ []
+
+
+Underfull \vbox (badness 3930) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 419--424
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--443
-
- []
-
-
-Underfull \hbox (badness 4353) in paragraph at lines 438--443
-\OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Choose the cor-rect an-swer in
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-Underfull \hbox (badness 6300) in paragraph at lines 503--505
-[]\OT1/ptm/m/n/12 Using Co-fac-tors of el-e-ments of sec-ond
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 593--601
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 601--605
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 605--609
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 609--615
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 609--615
-\OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Solve the sys-tem lin-ear
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 643--652
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--653
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 653--654
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 654--655
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 655--656
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 656--660
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--706
+Underfull \hbox (badness 10000) in paragraph at lines 408--414
 \OML/cmm/m/it/12 A[] \OT1/cmr/m/n/12 = []$ \OT1/ptm/m/n/12 and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--706
+Underfull \hbox (badness 10000) in paragraph at lines 408--414
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--712
+Underfull \hbox (badness 10000) in paragraph at lines 414--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--725
+Underfull \hbox (badness 10000) in paragraph at lines 457--466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--474
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 535--540
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
-Overfull \hbox (9.48709pt too wide) in paragraph at lines 735--740
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--610
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+Overfull \hbox (9.48709pt too wide) in paragraph at lines 620--625
 []$[]$\OT1/ptm/m/n/12 =3(a+b+c)(ab+bc+ca) 
  []
 
-[5
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--672
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--676
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 676--680
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--684
+
+ []
+
+[4
 
 ] (./gvv_ncert_matrices_det.aux)
 Package rerunfilecheck Info: File `gvv_ncert_matrices_det.out' has not changed.
 
-(rerunfilecheck)             Checksum: 76E5A610E6D688DCC8993B32E174FCDF;186.
+(rerunfilecheck)             Checksum: EB598F7D81360355C48C489902B9E757;592.
  ) 
 Here is how much of TeX's memory you used:
- 12495 strings out of 478994
- 184219 string characters out of 5864751
- 531727 words of memory out of 5000000
- 29665 multiletter control sequences out of 15000+600000
+ 12474 strings out of 478994
+ 184044 string characters out of 5864751
+ 537685 words of memory out of 5000000
+ 29668 multiletter control sequences out of 15000+600000
  440292 words of font info for 101 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 71i,14n,74p,514b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,8n,74p,514b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -776,10 +757,10 @@ public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb></home/user/texmf/fonts/type1/tfrupee/tfrupee.pfb></usr/share/te
 xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/ur
 w/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gvv_ncert_matrices_det.pdf (5 pages, 219920 bytes).
+Output written on gvv_ncert_matrices_det.pdf (4 pages, 214832 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 130 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

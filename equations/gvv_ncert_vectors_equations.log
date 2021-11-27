@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  11 NOV 2021 18:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  25 NOV 2021 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**gvv_ncert_matrices_chemistry.tex
-(./gvv_ncert_matrices_chemistry.tex
+**gvv_ncert_vectors_equations.tex
+(./gvv_ncert_vectors_equations.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (/usr/share/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
@@ -108,7 +108,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEPARstartletwidth=\dimen161
 \c@IEEEbiography=\count193
 \@IEEEtranrubishbin=\box48
-) (/home/user/texmf/tex/latex/tmeslatex/amssymb.sty
+) (/usr/share/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+(/home/user/texmf/tex/latex/tmeslatex/amssymb.sty
 Package: amssymb 2002/01/22 v2.2d
 
 (/home/user/texmf/tex/latex/tmeslatex/amsfonts.sty
@@ -517,8 +520,8 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count302
 \l__pdf_internal_box=\box61
 )
-(./gvv_ncert_matrices_chemistry.aux)
-\openout1 = `gvv_ncert_matrices_chemistry.aux'.
+(./gvv_ncert_vectors_equations.aux)
+\openout1 = `gvv_ncert_vectors_equations.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
@@ -540,6 +543,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
 
 -- Lines per column: 50 (exact).
+LaTeX Info: Redefining \celsius on input line 89.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 89.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 89.
+Package gensymb Info: Using \Omega for \ohm on input line 89.
+
+Package gensymb Warning: Not defining \micro.
+
 (/home/user/texmf/tex/latex/tmeslatex/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen194
@@ -562,9 +576,9 @@ LaTeX Info: Redefining \ref on input line 89.
 LaTeX Info: Redefining \pageref on input line 89.
 LaTeX Info: Redefining \nameref on input line 89.
 
-(./gvv_ncert_matrices_chemistry.out) (./gvv_ncert_matrices_chemistry.out)
+(./gvv_ncert_vectors_equations.out) (./gvv_ncert_vectors_equations.out)
 \@outlinefile=\write3
-\openout3 = `gvv_ncert_matrices_chemistry.out'.
+\openout3 = `gvv_ncert_vectors_equations.out'.
 
 \c@lstlisting=\count304
 
@@ -596,59 +610,95 @@ e
 \c@lemma=\count314
 \c@example=\count315
 \c@rem=\count316
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 247.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 244.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14> on input line 247.
+(Font)              <14> on input line 244.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.79996> on input line 247.
+(Font)              <9.79996> on input line 244.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 247.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 247
+(Font)              <7> on input line 244.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 244
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 247
+LaTeX Font Info:    Trying to load font information for U+msb on input line 244
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(./gvv_ncert_matrices_chemistry.toc)
+(./gvv_ncert_vectors_equations.toc)
 \tf@toc=\write4
-\openout4 = `gvv_ncert_matrices_chemistry.toc'.
+\openout4 = `gvv_ncert_vectors_equations.toc'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 304.
+(Font)              <12> on input line 298.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 304.
+(Font)              <8> on input line 298.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 304.
- (./solutions/1.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              <6> on input line 298.
 
 
-]) (./solutions/2.tex) (./solutions/3.tex
-[2]
-Underfull \hbox (badness 2600) in paragraph at lines 28--30
-\OT1/ptm/m/n/12 Clearly the sys-tem is lin-early de-pen-dent.
+LaTeX Warning: Reference `fig:line_check_sol_unique' on page 1 undefined on inp
+ut line 386.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+
+LaTeX Warning: Reference `fig:line_check_nosol' on page 2 undefined on input li
+ne 422.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 561.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 561.
+
+[2] [3]
+
+LaTeX Warning: Reference `fig:line_check_sol2' on page 4 undefined on input lin
+e 774.
+
+
+Overfull \hbox (2.47757pt too wide) in paragraph at lines 814--814
+[] 
  []
 
-) (./solutions/4.tex [3]) [4
 
-] (./gvv_ncert_matrices_chemistry.aux)
-Package rerunfilecheck Info: File `gvv_ncert_matrices_chemistry.out' has not ch
-anged.
-(rerunfilecheck)             Checksum: 52DBBCA1C6459DB281E69FF49C1CA799;83.
+LaTeX Warning: Reference `fig:line_check_sol3' on page 4 undefined on input lin
+e 821.
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 814--829
+[] \OT1/ptm/m/n/12 has in-finitely many so-lu-tions. The
+ []
+
+
+LaTeX Warning: Reference `fig:line_check_sol' on page 4 undefined on input line
+ 883.
+
+[4] [5
+
+] (./gvv_ncert_vectors_equations.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `gvv_ncert_vectors_equations.out' has not cha
+nged.
+(rerunfilecheck)             Checksum: 4A69AA2928E4F118BDB75C6A3E7DCB45;189.
  ) 
 Here is how much of TeX's memory you used:
- 12720 strings out of 478994
- 186569 string characters out of 5864751
- 542042 words of memory out of 5000000
- 29928 multiletter control sequences out of 15000+600000
- 439864 words of font info for 100 fonts, out of 8000000 for 9000
+ 12823 strings out of 478994
+ 187693 string characters out of 5864751
+ 537831 words of memory out of 5000000
+ 29987 multiletter control sequences out of 15000+600000
+ 441000 words of font info for 101 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 71i,19n,74p,520b,1009s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,20n,74p,519b,1168s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -657,13 +707,16 @@ r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/
-times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gvv_ncert_matrices_chemistry.pdf (4 pages, 132437 bytes).
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/urw/t
+imes/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/
+share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on gvv_ncert_vectors_equations.pdf (5 pages, 163007 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
- 83 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 

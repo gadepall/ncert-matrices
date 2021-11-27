@@ -286,57 +286,77 @@ This manual provides a simple introduction to determinants,
 based on exercises from the NCERT textbooks from Class 6-12.  
 \end{abstract}
 
-\section{Determinants}
+\section{Minor and Cofactor}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
-\item Let 
-\begin{align}
-	\vec{A} = \myvec{a_1 & b_1 & c_1  \\ a_2 & b_2 & c_2  \\ a_3 & b_3 & c_3}.
-\end{align}
-be a $3 \times 3$ matrix. 
-Then, 
-\begin{multline}
-	\mydet{\vec{A}} = a_1 \myvec{ b_2 & c_2 \\  b_3 & c_3} - a_2\myvec{ b_1 & c_1 \\  b_3 & c_3 }  \\ + a_3\myvec{a_1 & b_1 \\ a_2 & b_2 }.
-\end{multline}
-\item Let $\lambda_1,\lambda_2, \dots, \lambda_n$ be the eigenvalues of a matrix $\vec{A}$.  Then,   the product of the eigenvalues is equal to the determinant of $\vec{A}$.
-\begin{align}
-	\mydet{\vec{A}} = \prod_{i=1}^{n}\lambda_i
-\end{align}
-%
-\item 
-\begin{align}
-	\mydet{\vec{A}\vec{B}} = \mydet{\vec{A}}\mydet{\vec{B}}
-\end{align}
-\item If $\vec{A}$ be an $n \times n$ matrix, 
-\begin{align}
-	\mydet{k\vec{A}} = k^n\mydet{\vec{A}}
-\end{align}
-
+\item \textbf{Write Minors and Coafactors of the elements of following determinants:}(i) $\mydet{
+2&-4 \\ 0 &3 }$ \\
+(ii) $\mydet{a&c \\ b &d}$
+\item (i) $\mydet{1&0&0 \\ 0&1&0 \\ 0&0&1}$\\
+(ii) $\mydet{1&0&4 \\ 3&5&-1 \\ 0&1&2}$
+\item Using Cofactors of elements of second row,evaluate $\Delta$ =
+$\mydet{ 5&3&8 \\ 2&0&1 \\ 1&2&3 }.$
+\item Using Cofactors of elements of third column ,evaluate $\Delta$ = 
+$\mydet{ 1&x&yz \\ 1&y&zx \\ 1&z&xy }.$
+\item If $\Delta = \mydet{
+a_{11}&a_{12}&a_{13} \\ a_{21}&a_{22}&a_{23} \\ a_{31}&a_{32}&a_{33}
+}$ and $A_{ij}$ is Cofactors of $a_{ij}$ then value of $\Delta$ is given by 
+\begin{enumerate}
+\item $a_{11}A_{31}+a_{12}A_{32}+a_{13}A_{33}$
+\item $a_{11}A_{11}+a_{12}A_{21}+a_{13}A_{31}$
+\item $a_{21}A_{11}+a_{22}A_{12}+a_{23}A_{13}$
+\item $a_{11}A_{11}+a_{21}A_{21}+a_{31}A_{31}$
+\end{enumerate} 
 \end{enumerate}
-\section{Examples}
+\section{Adjoint}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item \textbf{Find adjoint of each of the matrices} $\begin{bmatrix}
+1&2 \\ 3&4
+\end{bmatrix}$
+\item $\begin{bmatrix}
+1&-1&2 \\ 2&3&5 \\ -2&0&1
+\end{bmatrix}$
+Verify A(adjA)=(adjA)A=$\abs{A}I$
+\item $\begin{bmatrix}
+2&3 \\ -4&-6
+\end{bmatrix}$
+\item $\begin{bmatrix}
+1&-1&2 \\ 3&0&-2 \\ 1&0&3
+\end{bmatrix}$
+\item $\begin{bmatrix}
+2&-2 \\ 4&3
+\end{bmatrix}$
+\item $\begin{bmatrix}
+-1&5 \\ -3&2
+\end{bmatrix}$
+\item $\begin{bmatrix}
+1&2&3 \\ 0&2&4 \\ 0&0&5
+\end{bmatrix}$
+\item $\begin{bmatrix}
+1&0&0 \\ 3&3&0 \\ 5&2&-1
+\end{bmatrix}$
+\item $\begin{bmatrix}
+2&1&3 \\ 4&-1&0 \\ -7&2&1
+\end{bmatrix}$
+\item $\begin{bmatrix}
+1&-1&2 \\ 0&2&-3 \\ 3&-2&4
+\end{bmatrix}$
+\item $\begin{bmatrix}
+1&0&0 \\ 0& \cos\alpha &\sin\alpha \\ 0&\sin\alpha&-\cos\alpha
+\end{bmatrix}$
+\end{enumerate}
+\section{Properties}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
-\item Find 
-$\mydet{
-2&4\\-5&-1
-}$
-\\
-\solution 
-%\input{./solutions/1/chapters/line/det/solution.tex}
-
-\item (i) $\mydet{\cos\theta& -\sin\theta\\ \sin\theta& \cos\theta }$ 
-(ii) $\mydet{
-x^2-x+1& x-1\\ x+1&  x+1
-}$
-\\
-\solution 
-%\input{./solutions/2/chapters/line_ex/determinants/solution.tex}
 \item If$ \vec{A} = \mydet{1&2\\4&2}$,then show that  
 $\abs{2\vec{A}}=4\abs{\vec{A}}$
 \\
@@ -346,29 +366,125 @@ $\abs{2\vec{A}}=4\abs{\vec{A}}$
 \\
 \solution 
 %\input{./solutions/4/chapters/line/determinent/solution.tex}
-\item Evaluate the determinants
+Choose the correct answer in Exercises 23 and 24.
+\item Let A be a square matrix of order 3X3, then 
+$\abs{kA}$ is equal to
 \begin{enumerate}
-\item $\mydet{
-3&-1&-2\\0&0&-1\\3&-5&0
-}$
-\item $\mydet{
-3&-4&5\\1&1&-2\\2&3&1
+\item $k\abs{A}$
+\item $k^2\abs{A}$
+\item $k^3\abs{A}$
+\item $3k\abs{A}$
+\end{enumerate} 
+\item Which of the following is correct
+\begin{enumerate}
+\item Determinant is a square matrix.
+\item Determinant is a number associated to a matrix.
+\item Determinant is a number associated to a square matrix.
+\item None of these.
+\end{enumerate}
+
+\item Let A=
+$\begin{bmatrix}
+3&7 \\ 2&5
+\end{bmatrix}$ and B=
+$\begin{bmatrix}
+6&8 \\ 7&9
+\end{bmatrix}.$ Verify that $(AB)^{-1}=B^{-1} A^{-1}$
+
+\item Let A be a nonsingular square matrix of order 3X3 .Then $\abs{adjA}$ is equal to 
+\begin{enumerate}
+\item $\abs{A}$
+\item $\abs{A}^2$
+\item $\abs{A}^3$
+\item $3\abs{A}$
+\end{enumerate}
+\item If A is an invertible matrix of order 2, then det($A^{-1}$) is equal to 
+\begin{enumerate}
+\item det(A)
+\item $\frac{1}{det(A)}$
+\item 1
+\item 0
+\end{enumerate}
+\item If \\
+$A^{-1}=\begin{bmatrix}
+3&-1&1 \\ -15&6&-5 \\5&-2&2
+\end{bmatrix}$ and B=$\begin{bmatrix}
+1&2&-2 \\ -1&3&0 \\0&-2&1
+\end{bmatrix},$ find $(AB)^{-1}$\\
+\item Let A=
+$\begin{bmatrix}
+1&2&1 \\ 2&3&1 \\1&1&5
+\end{bmatrix}.$ Verify that \\
+(i) $[adj A]^{-1}=adj(A)^{-1}$\\
+(ii) $(A^{-1})^{-1}=A$\\
+\end{enumerate}
+\section{Cramer's Rule}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The cost of 4 kg onion, 3 kg wheat and 2 kg rice is \rupee 60. The cost of 2 kg onion,4 kg wheat and 6 kg rice is \rupee 90.The cost of 6kg onion 2kg wheat and 3kg rice is \rupee 70.Find the cost of each item per kg by matrix mathod. 
+Solve the system linear equations,using matrix method.
+\item 
+$\begin{alignedat}[t]{2}
+%\myvec{5 & 2}\vec{x} &= 4
+%\\ 
+%\myvec{7 & 3}\vec{x} &= 5
+5x+2y&=4 \\ 7x+3y&=5
+\end{alignedat}$
+\\
+\solution
+%\input{./solutions/det/58/solution.tex}
+\item 
+$\begin{alignedat}[t]{2}
+%\myvec{2 & -1}\vec{x} &= -2
+%\\ 
+%\myvec{3 & 4}\vec{x} &= 3
+2x-y&=-2 \\ 3x+4y&=3
+\end{alignedat}$
+\\
+\solution
+%\input{./solutions/det/59/solution.tex}
+\item $\begin{alignedat}[t]{2}
+%\myvec{4 & -3}\vec{x} &= 3
+%\\ 
+%\myvec{3 & -5}\vec{x} &= 7
+4x-3y&=3 \\ 3x-5y&=7
+\end{alignedat}$
+\\
+\solution
+%\input{./solutions/det/60/solution.tex}
+\item $\begin{alignedat}[t]{2}
+%\myvec{5 & 2}\vec{x} &= 3
+%\\ 
+%\myvec{3 & 2}\vec{x} &= 5
+5x+2y&=3 \\ 3x+2y&=5
+\end{alignedat}$\\
+\\
+\solution
+%\input{./solutions/det/61/solution.tex}
+\item 2x+y+z = 1 \\ x-2y-z = $\frac{3}{2}$ \\ 3y- 5z = 9\\
+\item x-y+z = 4 \\ 2x+y-3z = 0 \\ x+y+z = 2\\
+\item 2x+3y+3z = 5 \\ x-2y+z = -4 \\ 3x-y-2z = 3\\
+\item x-y+2z = 7 \\ 3x+4y-5z = -5 \\ 2x-y+3z = 12\\ 
+\item If A=$\begin{bmatrix}
+2&-3&5 \\ 3&2&-4 \\ 1&1&-2
+\end{bmatrix},$ find $A^{-1}.$ Using $A^{-1}$ solve the system of equations \\
+2x-3y+5z = 11, \\ 3x+2y-4z = -5, \\ x+y-2z =-3.\\
+\end{enumerate}
+\section{Algebra}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item (i) $\mydet{\cos\theta& -\sin\theta\\ \sin\theta& \cos\theta }$ 
+(ii) $\mydet{
+x^2-x+1& x-1\\ x+1&  x+1
 }$
 \\
 \solution 
-%\input{./solutions/5/chapters/lines/docq14.tex}
-\item $\mydet{
-0&1&2 \\ -1&0&-3\\-2&3&0
-}$
-\item $\mydet{
-2&-1&-2\\0&2&-1\\3&-5&0
-}$
-\end{enumerate}  
-\item If A=$\mydet{1&1&-2\\2&1&-3\\5&4&-9}$, 
-find $\abs{A}$
-\\
-\solution 
-%\input{./solutions/6/chapters/line/determinants/solution.tex}
+%\input{./solutions/2/chapters/line_ex/determinants/solution.tex}
 \item Find the values of x,If\\
 (i)$\mydet{
 2&4\\5&1
@@ -420,7 +536,7 @@ a-b&b-c&c-a\\b-c&c-a&a-b\\c-a&a-b&b-c}=0$
 \\
 \solution 
 %\input{./solutions/det/15/solution.tex}
-By Using properties of determinants, in Exercises 16 to 22,Show that;
+By Using properties of determinants, show that;
 \item (i)$\mydet{1&a&a^2\\1&b&b^2\\1&c&c^2}$=(a-b)(b-c)(c-a)\\
 (ii) $\mydet{1&1&1 \\ a&b&c \\ a^3&b^3&c^3}$=(a-b)(b-c)(c-a)(a+b+c)
 \\
@@ -439,225 +555,6 @@ By Using properties of determinants, in Exercises 16 to 22,Show that;
 \\
 \solution 
 %\input{./solutions/det/22/solution.tex}
-Choose the correct answer in Exercises 23 and 24.
-\item Let A be a square matrix of order 3X3, then 
-$\abs{kA}$ is equal to
-\begin{enumerate}
-\item $k\abs{A}$
-\item $k^2\abs{A}$
-\item $k^3\abs{A}$
-\item $3k\abs{A}$
-\end{enumerate} 
-\item Which of the following is correct
-\begin{enumerate}
-\item Determinant is a square matrix.
-\item Determinant is a number associated to a matrix.
-\item Determinant is a number associated to a square matrix.
-\item None of these.
-\end{enumerate}
-\item Find area of the triangle with vertices at the point given in each of the following :\\
-(i) \myvec{1&0}, \myvec{6&0}, \myvec{4&3}\\
-(ii) \myvec{2&7}, \myvec{1&1}, \myvec{10&8}\\
-(iii) \myvec{-2&-3}, \myvec{3&2}, \myvec{-1&-8}\\
-\solution 
-\begin{enumerate}
-    \item 
-    %\input{solutions/det/73/1/main.tex}
-    
-
-\end{enumerate}
-\item Show that points A=\myvec{a&b+c}, B=\myvec{b&c+a}, C=\myvec{c&a+b} are collinear.
-\\
-\solution 
-%\input{./solutions/det/26/solution.tex}
-\item Find values of k if area of triangle is 4sq.units and vertices are \\
-(i)) \myvec{k&0}, \myvec{4&0}, \myvec{0&2} \\ (ii) \myvec{-2&0}, \myvec{0&4}, \myvec{0&k}
-\item Find equation of line joining
-\begin{enumerate}
-\item  \myvec{1&2} and \myvec{3&6} 
-\item \myvec{3&1} and \myvec{9&3}.
-\end{enumerate}
-\solution
-\begin{enumerate}
-    \item %\input{solutions/july/det/76/1/Assignment1.tex}
-    \item %\input{solutions/aug/1/76/2/assignment5.tex}
-    
-\end{enumerate}
-
-\item If the area of triangle is 35 sq.units with vertices \myvec{2&-6}, \myvec{5&4} and \myvec{k&4}.then k is 
-\begin{enumerate}
-\item 12
-\item -2
-\item -12,-2
-\item 12,-2
-\end{enumerate}
-\solution
-%\input{solutions/aug/1/77.tex}
-
-\textbf{Write Minors and Coafactors of the elements of following determinants:}
-\item (i) $\mydet{
-2&-4 \\ 0 &3 }$ \\
-(ii) $\mydet{a&c \\ b &d}$
-\item (i) $\mydet{1&0&0 \\ 0&1&0 \\ 0&0&1}$\\
-(ii) $\mydet{1&0&4 \\ 3&5&-1 \\ 0&1&2}$
-\item Using Cofactors of elements of second row,evaluate $\Delta$ =
-$\mydet{ 5&3&8 \\ 2&0&1 \\ 1&2&3 }.$
-\item Using Cofactors of elements of third column ,evaluate $\Delta$ = 
-$\mydet{ 1&x&yz \\ 1&y&zx \\ 1&z&xy }.$
-\item If $\Delta = \mydet{
-a_{11}&a_{12}&a_{13} \\ a_{21}&a_{22}&a_{23} \\ a_{31}&a_{32}&a_{33}
-}$ and $A_{ij}$ is Cofactors of $a_{ij}$ then value of $\Delta$ is given by 
-\begin{enumerate}
-\item $a_{11}A_{31}+a_{12}A_{32}+a_{13}A_{33}$
-\item $a_{11}A_{11}+a_{12}A_{21}+a_{13}A_{31}$
-\item $a_{21}A_{11}+a_{22}A_{12}+a_{23}A_{13}$
-\item $a_{11}A_{11}+a_{21}A_{21}+a_{31}A_{31}$
-\end{enumerate} 
-\textbf{Find adjoint of each of the matrices} 
-\item $\begin{bmatrix}
-1&2 \\ 3&4
-\end{bmatrix}$
-\item $\begin{bmatrix}
-1&-1&2 \\ 2&3&5 \\ -2&0&1
-\end{bmatrix}$
-Verify A(adjA)=(adjA)A=$\abs{A}I$
-\item $\begin{bmatrix}
-2&3 \\ -4&-6
-\end{bmatrix}$
-\item $\begin{bmatrix}
-1&-1&2 \\ 3&0&-2 \\ 1&0&3
-\end{bmatrix}$
-\item $\begin{bmatrix}
-2&-2 \\ 4&3
-\end{bmatrix}$
-\item $\begin{bmatrix}
--1&5 \\ -3&2
-\end{bmatrix}$
-\item $\begin{bmatrix}
-1&2&3 \\ 0&2&4 \\ 0&0&5
-\end{bmatrix}$
-\item $\begin{bmatrix}
-1&0&0 \\ 3&3&0 \\ 5&2&-1
-\end{bmatrix}$
-\item $\begin{bmatrix}
-2&1&3 \\ 4&-1&0 \\ -7&2&1
-\end{bmatrix}$
-\item $\begin{bmatrix}
-1&-1&2 \\ 0&2&-3 \\ 3&-2&4
-\end{bmatrix}$
-\item $\begin{bmatrix}
-1&0&0 \\ 0& \cos\alpha &\sin\alpha \\ 0&\sin\alpha&-\cos\alpha
-\end{bmatrix}$
-\item Let A=
-$\begin{bmatrix}
-3&7 \\ 2&5
-\end{bmatrix}$ and B=
-$\begin{bmatrix}
-6&8 \\ 7&9
-\end{bmatrix}.$ Verify that $(AB)^{-1}=B^{-1} A^{-1}$
-\item Let A =$\begin{bmatrix}
-3&1 \\ -1&2
-\end{bmatrix},$ show that $A^2-5A+7I=O.$ Hence find $A^{-1}$
-\solution 
-%\input{./solutions/det/47/solution.tex}
-\item For the matrix A= $\begin{bmatrix}
-3&2 \\ 1&1
-\end{bmatrix},$ find the numbers a and b such that $A^2+aA+bI=O.$
-\\
-\solution 
-%\input{./solutions/det/48/solution.tex}
-
-\item For the matrix A=$\myvec{1&1&1 \\ 1&2&-3 \\ 2&-1&3}$.Show that \begin{align}
-    A^3-6A^2+5A+11I=0\label{eq:det/49/1}
-\end{align} and hence find $A^{-1}$.
-%\item For the matrix A=$\begin{bmatrix}
-%1&1&1 \\ 1&2&-3 \\ 2&-1&3
-%\end{bmatrix}$ Show that $A^3-6A^2+9A-4I=O$ and hence find $A^{-1}$
-\solution 
-%\input{./solutions/det/49/solution.tex}
-\item Let A be a nonsingular square matrix of order 3X3 .Then $\abs{adjA}$ is equal to 
-\begin{enumerate}
-\item $\abs{A}$
-\item $\abs{A}^2$
-\item $\abs{A}^3$
-\item $3\abs{A}$
-\end{enumerate}
-\item If A is an invertible matrix of order 2, then det($A^{-1}$) is equal to 
-\begin{enumerate}
-\item det(A)
-\item $\frac{1}{det(A)}$
-\item 1
-\item 0
-\end{enumerate}
-\textbf{Examine the consistency of the system of given Equations.}
-\item $\begin{alignedat}[t]{2}
-x+3y&=5 
-\\
-2x+6y&=8 
-\end{alignedat}$\\
-\\
-\solution 
-%\input{./solutions/det/54/solution.tex}
-\item x+y+z=1\\ 2x+3y+2z=2\\ax+ay+2az=4\\
-\\
-\solution 
-%\input{./solutions/det/55/latex/solution.tex}
-\item 3x-y-2z=2 \\ 2y-z=-1 \\ 3x-5y=3\\
-\\
-\solution 
-%\input{./solutions/det/56/solution.tex}
-\item 5x-y+4z=5 \\ 2x+3y+5z=2 \\ 5x-2y+6z=-1\\
-\\
-\solution
-%\input{./solutions/det/57/solution.tex}
-Solve the system linear equations,using matrix method.
-\item 
-$\begin{alignedat}[t]{2}
-%\myvec{5 & 2}\vec{x} &= 4
-%\\ 
-%\myvec{7 & 3}\vec{x} &= 5
-5x+2y&=4 \\ 7x+3y&=5
-\end{alignedat}$
-\\
-\solution
-%\input{./solutions/det/58/solution.tex}
-\item 
-$\begin{alignedat}[t]{2}
-%\myvec{2 & -1}\vec{x} &= -2
-%\\ 
-%\myvec{3 & 4}\vec{x} &= 3
-2x-y&=-2 \\ 3x+4y&=3
-\end{alignedat}$
-\\
-\solution
-%\input{./solutions/det/59/solution.tex}
-\item $\begin{alignedat}[t]{2}
-%\myvec{4 & -3}\vec{x} &= 3
-%\\ 
-%\myvec{3 & -5}\vec{x} &= 7
-4x-3y&=3 \\ 3x-5y&=7
-\end{alignedat}$
-\\
-\solution
-%\input{./solutions/det/60/solution.tex}
-\item $\begin{alignedat}[t]{2}
-%\myvec{5 & 2}\vec{x} &= 3
-%\\ 
-%\myvec{3 & 2}\vec{x} &= 5
-5x+2y&=3 \\ 3x+2y&=5
-\end{alignedat}$\\
-\\
-\solution
-%\input{./solutions/det/61/solution.tex}
-\item 2x+y+z = 1 \\ x-2y-z = $\frac{3}{2}$ \\ 3y- 5z = 9\\
-\item x-y+z = 4 \\ 2x+y-3z = 0 \\ x+y+z = 2\\
-\item 2x+3y+3z = 5 \\ x-2y+z = -4 \\ 3x-y-2z = 3\\
-\item x-y+2z = 7 \\ 3x+4y-5z = -5 \\ 2x-y+3z = 12\\ 
-\item If A=$\begin{bmatrix}
-2&-3&5 \\ 3&2&-4 \\ 1&1&-2
-\end{bmatrix},$ find $A^{-1}.$ Using $A^{-1}$ solve the system of equations \\
-2x-3y+5z = 11, \\ 3x+2y-4z = -5, \\ x+y-2z =-3.\\
-\item The cost of 4 kg onion, 3 kg wheat and 2 kg rice is \rupee 60. The cost of 2 kg onion,4 kg wheat and 6 kg rice is \rupee 90.The cost of 6kg onion 2kg wheat and 3kg rice is \rupee 70.Find the cost of each item per kg by matrix mathod. 
 \item Prove that the determinant \\
 $\mydet{
 x &\sin\theta&\cos\theta \\ -\sin\theta&-x&1 \\ \cos\theta&1&x
@@ -697,18 +594,6 @@ a^2&bc&ac+c^2 \\ a^2+ab&b^2&ac \\ab&b^2+bc&c^2
 }= 4a^2b^2c^2$\\
 \solution 
 %\input{./solutions/det/73/solution.tex}
-\item If \\
-$A^{-1}=\begin{bmatrix}
-3&-1&1 \\ -15&6&-5 \\5&-2&2
-\end{bmatrix}$ and B=$\begin{bmatrix}
-1&2&-2 \\ -1&3&0 \\0&-2&1
-\end{bmatrix},$ find $(AB)^{-1}$\\
-\item Let A=
-$\begin{bmatrix}
-1&2&1 \\ 2&3&1 \\1&1&5
-\end{bmatrix}.$ Verify that \\
-(i) $[adj A]^{-1}=adj(A)^{-1}$\\
-(ii) $(A^{-1})^{-1}=A$\\
 \item Evaluate 
 $\mydet{
 x&y&x+y \\ y&x+y&x \\ x+y&x&y
@@ -737,6 +622,65 @@ x&x^2&1+px^3 \\ y&y^2&1+py^3 \\z&z^2&1+pz^3
 }$=3(a+b+c)(ab+bc+ca)\\
 \solution 
 %\input{./solutions/det/80/solution.tex}
+
+\end{enumerate}
+\section{Arithmetic}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Find 
+$\mydet{
+2&4\\-5&-1
+}$
+\\
+\solution 
+%\input{./solutions/1/chapters/line/det/solution.tex}
+\item Evaluate the determinants
+\begin{enumerate}
+\item $\mydet{
+3&-1&-2\\0&0&-1\\3&-5&0
+}$
+\item $\mydet{
+3&-4&5\\1&1&-2\\2&3&1
+}$
+\\
+\solution 
+%\input{./solutions/5/chapters/lines/docq14.tex}
+\item $\mydet{
+0&1&2 \\ -1&0&-3\\-2&3&0
+}$
+\item $\mydet{
+2&-1&-2\\0&2&-1\\3&-5&0
+}$
+\end{enumerate}  
+\item If A=$\mydet{1&1&-2\\2&1&-3\\5&4&-9}$, 
+find $\abs{A}$
+\\
+\solution 
+%\input{./solutions/6/chapters/line/determinants/solution.tex}
+\textbf{Examine the consistency of the system of given Equations.}
+\item $\begin{alignedat}[t]{2}
+x+3y&=5 
+\\
+2x+6y&=8 
+\end{alignedat}$\\
+\\
+\solution 
+%\input{./solutions/det/54/solution.tex}
+\item x+y+z=1\\ 2x+3y+2z=2\\ax+ay+2az=4\\
+\\
+\solution 
+%\input{./solutions/det/55/latex/solution.tex}
+\item 3x-y-2z=2 \\ 2y-z=-1 \\ 3x-5y=3\\
+\\
+\solution 
+%\input{./solutions/det/56/solution.tex}
+\item 5x-y+4z=5 \\ 2x+3y+5z=2 \\ 5x-2y+6z=-1\\
+\\
+\solution
+%\input{./solutions/det/57/solution.tex}
 
 \end{enumerate}
  

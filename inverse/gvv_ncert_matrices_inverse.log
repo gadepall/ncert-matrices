@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  14 NOV 2021 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  26 NOV 2021 11:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -620,17 +620,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `gvv_ncert_matrices_inverse.toc'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 297.
+(Font)              <12> on input line 324.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 297.
+(Font)              <8> on input line 324.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 297.
- (./solutions/1.tex) (./solutions/3.tex
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]) (./solutions/2.tex)
-(./solutions/4.tex)
+(Font)              <6> on input line 324.
+ (./solutions/2.tex) (./solutions/4.tex)
 Underfull \hbox (badness 6526) in paragraph at lines 332--333
 []\OT1/ptm/m/n/12 Using el-e-men-tary trans-for-ma-tions,find the
  []
@@ -640,15 +635,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
-(./solutions/5.tex
-Underfull \vbox (badness 1577) has occurred while \output is active []
+(./solutions/5.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- [2])
-(./solutions/6.tex
-Underfull \vbox (badness 1454) has occurred while \output is active []
 
-)
-(./solutions/7.tex [3])
+])
+(./solutions/6.tex) (./solutions/7.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 345--348
 
  []
@@ -658,7 +649,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--353
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 353--358
 
  []
@@ -668,37 +659,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--364
 
  []
 
-[4] [5
+[3] (./gvv_ncert_matrices_inverse.aux)
 
-] (./gvv_ncert_matrices_inverse.aux)
-Package rerunfilecheck Info: File `gvv_ncert_matrices_inverse.out' has not chan
-ged.
-(rerunfilecheck)             Checksum: 2B69345D12B0540098883C01E5D2EDED;181.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `gvv_ncert_matrices_inverse.out' has chang
+ed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `gvv_ncert_matrices_inverse.out':
+(rerunfilecheck)             Before: 2B69345D12B0540098883C01E5D2EDED;181
+(rerunfilecheck)             After:  52DBBCA1C6459DB281E69FF49C1CA799;83.
  ) 
 Here is how much of TeX's memory you used:
- 12495 strings out of 478994
- 184712 string characters out of 5864751
- 558717 words of memory out of 5000000
- 29666 multiletter control sequences out of 15000+600000
+ 12461 strings out of 478994
+ 184334 string characters out of 5864751
+ 548717 words of memory out of 5000000
+ 29664 multiletter control sequences out of 15000+600000
  439864 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  71i,18n,74p,518b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.p
-fb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gvv_ncert_matrices_inverse.pdf (5 pages, 143029 bytes).
+pdfTeX warning (dest): name{section.2} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type
+1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
+></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on gvv_ncert_matrices_inverse.pdf (3 pages, 134633 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 111 named destinations out of 1000 (max. 500000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
+ 85 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
