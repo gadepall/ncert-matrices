@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  25 NOV 2021 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  28 NOV 2021 09:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -644,61 +644,70 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Warning: Reference `fig:line_check_sol_unique' on page 1 undefined on inp
 ut line 386.
 
+
+LaTeX Warning: Reference `fig:line_check_nosol' on page 1 undefined on input li
+ne 422.
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 
-LaTeX Warning: Reference `fig:line_check_nosol' on page 2 undefined on input li
-ne 422.
-
-
 LaTeX Warning: Command \textendash invalid in math mode on input line 561.
 
 
 LaTeX Warning: Command \textendash invalid in math mode on input line 561.
 
-[2] [3]
+[2]
 
-LaTeX Warning: Reference `fig:line_check_sol2' on page 4 undefined on input lin
-e 774.
+LaTeX Warning: Reference `eq:tri_geo_ex_diff_mat' on page 3 undefined on input 
+line 642.
 
 
-Overfull \hbox (2.47757pt too wide) in paragraph at lines 814--814
+LaTeX Warning: Reference `fig:collinear_3d' on page 3 undefined on input line 6
+60.
+
+[3] [4]
+
+LaTeX Warning: Reference `fig:line_check_sol2' on page 5 undefined on input lin
+e 965.
+
+
+Overfull \hbox (2.47757pt too wide) in paragraph at lines 1005--1005
 [] 
  []
 
 
-LaTeX Warning: Reference `fig:line_check_sol3' on page 4 undefined on input lin
-e 821.
+LaTeX Warning: Reference `fig:line_check_sol3' on page 5 undefined on input lin
+e 1012.
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 814--829
-[] \OT1/ptm/m/n/12 has in-finitely many so-lu-tions. The
- []
+LaTeX Warning: Reference `eq:line_aug' on page 5 undefined on input line 1060.
 
+[5]
 
-LaTeX Warning: Reference `fig:line_check_sol' on page 4 undefined on input line
- 883.
+LaTeX Warning: Reference `fig:line_check_sol' on page 6 undefined on input line
+ 1074.
 
-[4] [5
-
-] (./gvv_ncert_vectors_equations.aux)
+[6] (./gvv_ncert_vectors_equations.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `gvv_ncert_vectors_equations.out' has not cha
 nged.
 (rerunfilecheck)             Checksum: 4A69AA2928E4F118BDB75C6A3E7DCB45;189.
  ) 
 Here is how much of TeX's memory you used:
- 12823 strings out of 478994
- 187693 string characters out of 5864751
- 537831 words of memory out of 5000000
- 29987 multiletter control sequences out of 15000+600000
+ 12862 strings out of 478994
+ 188114 string characters out of 5864752
+ 535646 words of memory out of 5000000
+ 29990 multiletter control sequences out of 15000+600000
  441000 words of font info for 101 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 71i,20n,74p,519b,1168s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,20n,74p,519b,1177s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -713,10 +722,10 @@ pe1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/urw/t
 imes/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/
 share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on gvv_ncert_vectors_equations.pdf (5 pages, 163007 bytes).
+Output written on gvv_ncert_vectors_equations.pdf (6 pages, 170883 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 249 compressed objects within 3 object streams
- 135 named destinations out of 1000 (max. 500000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
+ 171 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
